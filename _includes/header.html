@@ -1,0 +1,39 @@
+<header class="site-header">
+<div class="frame">
+
+    <div class="title">
+      <a href="/">  <img src="/assets/SVG/logo.svg" class="logo-img"></a>
+    </div>
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+    <img class="draggable" />
+  <div class="menu">
+   <button class="hamburger hamburger--elastic" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  </div>
+    <div id="menu-list">
+        <ul>
+         {% for page in site.pages %}
+            {% if page.title %}
+        <a href="{{ page.url | prepend: site.baseurl }}"><li>{{ page.title }}</li></a>
+                {% endif %}
+     {% endfor %}
+        </ul>
+    </div>
+     <div class="title-bottom">
+        <img src="/assets/SVG/logo.svg" class="logo-img">
+    </div>
+</div>
+</header>

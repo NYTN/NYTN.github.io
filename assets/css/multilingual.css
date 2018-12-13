@@ -1,0 +1,44 @@
+
+span.ml-en {
+  font-family: elektrix, sans-serif;
+    font-size: 125%;
+    letter-spacing: -0.02rem;
+}
+
+span.ml-ko {
+  font-family: 'BareunDotum', sans-serif;
+  font-weight: 300;
+  /*below two lines are for baseline shift */
+  position:relative;
+  top:0;
+}
+
+span.ml-cn {
+  font-family: 'BareunDotum', sans-serif;
+  /*below two lines are for baseline shift */
+  position:relative;
+  top:0;
+}
+
+span.ml-jp {
+  font-family: 'BareunDotum', sans-serif;
+  /*below two lines are for baseline shift */
+  position:relative;
+  top:0;
+}
+
+span.ml-num {
+  font-family: elektrix, sans-serif;
+  /*below two lines are for baseline shift */
+  position:relative;
+  font-size: 125%;
+  top:0;
+}
+
+span.ml-punct {
+  font-family: elektrix, sans-serif;
+  /*below two lines are for baseline shift */
+  position:relative;
+  font-size: 125%;
+  top:0;
+}

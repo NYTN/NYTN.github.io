@@ -1,0 +1,264 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/* Master Typography */
+/* 
+    font-family: elektrix, sans-serif;
+    font-weight: 400; / 700;
+*/
+
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff') format('woff');
+}
+
+.bareundotum * {
+ font-family: 'BareunDotum', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html{
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    line-height: 2rem;
+    text-align: justify;
+    hyphens: auto;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+h1 {
+    text-align: center;
+    line-height: 3rem;
+    padding-bottom: 3.5rem;
+
+}
+h1 span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+body{
+    font-size: 1rem; 
+    line-height: 1.5rem;
+    pointer-events: initial;
+}
+
+div{
+      overflow: scroll;
+}
+
+span{
+    font-color: #9150c8;
+}
+
+/* frame */
+
+.frame{
+    left: 0;
+    top: 0;
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("/assets/frame.png");
+    background-size: 100vw 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.title{
+    position: fixed;
+    top: -5rem;
+    width: 22.5rem;
+    left: calc(50% - 11.25rem);
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.title-bottom{
+    position: fixed;
+    bottom: -12.5rem;
+    width: 22.5rem;
+    left: calc(50% - 11.25rem);
+    z-index: 1000;
+}
+
+.logo-img{
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( 0px 0px 0.2rem #9150c8 ); 
+    filter: drop-shadow( 0px 0px 0.2rem #9150c8 );
+}
+
+.wrapper{
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.menu{
+    pointer-events: initial;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 7000;
+}
+
+#menu-list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 40vw;
+    height: 100vh;
+    z-index: 5000;
+    pointer-events: initial;
+    background-image: linear-gradient(#9150c8, rgba(255,0,0,0));
+}
+
+#menu-list ul{
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 100;
+}
+
+#menu-list li{
+    padding: 1rem 2rem;
+    font-size: calc(2rem / 1.25);
+    font-color: #000 !important;
+    color: #000 !important;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+    opacity: 1;
+
+}
+
+#menu-list li:hover{
+    background-color: #000;
+    font-color: #9150c8 !important;
+}
+
+
+
+/* main div */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: -100;
+}
+
+#video{
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.page-content{
+    z-index: -10;
+}
+
+.post{
+    padding-top: 20vw;
+    padding-bottom: 12.5vw;
+}
+
+.post-header-conv{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+}
+
+.post-header-conv h1{
+    color: #fff;
+}
+
+.page-wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    padding-top: 12.5vw;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -500;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.post-list{
+    width: 20vw;
+    height: 30vw;
+    padding: 2rem;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    display: block;
+    background: #9150c8;
+    box-shadow: 0px 0px 3rem #9150c8;
+    vertical-align: middle;
+    display: inline-grid;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 10vw;
+    word-break: keep-all;
+    background-image: url(/img/img7.jpg);
+    background-position: center;
+}
+
+.post-list a{
+    color: #fff !important;
+}
+
+
+.draggable{
+    width: auto;
+    height: auto;
+    z-index: 3000;
+    display: block;
+    pointer-events: auto;
+    width: auto;
+    height: auto;
+    min-width: 20px;
+    min-height: 20px;
+    max-height: 140px;
+    max-width: 140px;
+}
