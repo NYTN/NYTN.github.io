@@ -1,21 +1,9 @@
 <header class="site-header">
 <div class="frame">
 
-    <div class="title">
-      <a href="/">  <img src="/assets/SVG/logo.svg" class="logo-img"></a>
-    </div>
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
-    <img class="draggable" />
+    
+    <!--    <img class="draggable" />  -->
+
   <div class="menu">
    <button class="hamburger hamburger--elastic" type="button">
     <span class="hamburger-box">
@@ -27,13 +15,21 @@
         <ul>
          {% for page in site.pages %}
             {% if page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}"><li>{{ page.title }}</li></a>
+        <a href="{{ page.url | prepend: site.baseurl }}"><li>{{ page.menu-title }}</li></a>
                 {% endif %}
      {% endfor %}
         </ul>
     </div>
-     <div class="title-bottom">
+    
+        
+</div>
+    <div class="title">
+      <a href="/">  <img src="/assets/SVG/logo.svg" class="logo-img"></a>
+    </div>
+    <div class="title-bottom">
         <img src="/assets/SVG/logo.svg" class="logo-img">
     </div>
-</div>
+    <div class="sticker-btn"><img src="/assets/SVG/sticker_btn.svg">
+    </div>
+
 </header>

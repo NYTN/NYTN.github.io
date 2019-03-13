@@ -1,18 +1,23 @@
 ---
-layout: page
-title: Events
+layout: post
+menu-title: Events
+title: "(Not) Your Typical Narcissist: A Screening"
+date: "2018.06.29"
+at: "@아르코미술관 아카이브 라운지"
+who: "참여 작가. 박보마, 백수현, 송민정, 신혜남, 최윤"
 permalink: /Events/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+여성의 외모는 남성의 그것보다 촘촘하게 평가받고, 논란이 되고, 소비된다. 본 스크리닝은 여성의 외모 꾸미기를 둘러싼 기존 논의의 흐름 중 ‘나르시시즘’에 초점을 맞추어 일련의 작업을 살펴보고자 한다. 필연적으로 대상화를 감행하고 남성적 시선을 대변해왔던 전적이 있는 카메라가 여성의 자기표현을 위한 공간을 마련해줄 수 있을까? 통상적으로 '여성적'이라고 분류되고 이로써 열등하다고 여겨진 이미지를 어떻게 다루어야 할까? 대체로 여성의 행위라고 여겨지거나 여성이 사용했을 때 특히 입방아에 오르는 셀프 카메라, 한국 여성이 동일시와 대상화의 이중적인 관계를 맺게 되는 여(아이)돌, 세세하게 파편화되어 성애화 되는 여성의 신체 부위 등을 다룬 영상 작업과 이미지 슬라이드 쇼를 통해 대화를 열어보고자 한다.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+상영작
+신혜남, <배꼽-구멍>, HD video, 11min 51sec, 2018.
+백수현, <Wearable Fantasy>, HD video, 10min 15sec, 2017.
+박보마, <앙투와네트의 귀걸이>, video series, 2010.
+<show ad <0> @ Shinil Building>, video, 2min 14sec, 2012.
+<show ad <2> @ Gwanghwamun Plaza>, 이미지 슬라이드(50 장), 2013.
+최윤, <하나코 1-100>, 슬라이드쇼, 14min 12sec, 2018
+송민정, <Cream Cream Orange>, HD video, 3min 48sec, 2017.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
 
-
-[jekyll-organization]: https://github.com/jekyll
+*본 프로그램은 “아르코 미디어 비평총서 미디어챕터 1 연구 프로그램”의 일환으로 진행되었습니다. 

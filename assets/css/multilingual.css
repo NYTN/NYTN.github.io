@@ -1,8 +1,40 @@
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BareunDotum';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff') format('woff');
+}
+
+.bareundotum * {
+ font-family: 'BareunDotum', sans-serif;
+}
+
+@font-face {
+    font-family: 'Covik Sans Mono_Regular';
+    src:    url('/assets/f/Covik_Sans_Mono-Regular.woff') format('woff'),
+            url('/assets/f/Covik_Sans_Mono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 span.ml-en {
-  font-family: elektrix, sans-serif;
-    font-size: 125%;
-    letter-spacing: -0.02rem;
+  font-family: 'Covik Sans Mono_Regular', sans-serif;
+    font-size: 109%;
 }
 
 span.ml-ko {
@@ -10,35 +42,22 @@ span.ml-ko {
   font-weight: 300;
   /*below two lines are for baseline shift */
   position:relative;
-  top:0;
-}
+  top:-1px;
 
-span.ml-cn {
-  font-family: 'BareunDotum', sans-serif;
-  /*below two lines are for baseline shift */
-  position:relative;
-  top:0;
-}
-
-span.ml-jp {
-  font-family: 'BareunDotum', sans-serif;
-  /*below two lines are for baseline shift */
-  position:relative;
-  top:0;
 }
 
 span.ml-num {
-  font-family: elektrix, sans-serif;
+  font-family: 'Covik Sans Mono_Regular', sans-serif;
   /*below two lines are for baseline shift */
-  position:relative;
-  font-size: 125%;
+  position: relative;
+  font-size: 109%;
   top:0;
 }
 
 span.ml-punct {
-  font-family: elektrix, sans-serif;
+  font-family: 'Covik Sans Mono_Regular', sans-serif;
   /*below two lines are for baseline shift */
-  position:relative;
-  font-size: 125%;
+  position: relative;
+  font-size: 109%;
   top:0;
 }

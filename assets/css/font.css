@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Covik Sans Mono_Black';
+    src:    url('Covik_Sans_Mono-Black.woff') format('woff'),
+            url('Covik_Sans_Mono-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Covik Sans Mono_Bold';
+    src:    url('Covik_Sans_Mono-Bold.woff') format('woff'),
+            url('Covik_Sans_Mono-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Covik Sans Mono_Medium';
+    src:    url('Covik_Sans_Mono-Medium.woff') format('woff'),
+            url('Covik_Sans_Mono-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Covik Sans Mono_Regular';
+    src:    url('Covik_Sans_Mono-Regular.woff') format('woff'),
+            url('Covik_Sans_Mono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Covik Sans Mono_Semibold';
+    src:    url('Covik_Sans_Mono-Semibold.woff') format('woff'),
+            url('Covik_Sans_Mono-Semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

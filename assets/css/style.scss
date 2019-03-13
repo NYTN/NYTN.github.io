@@ -2,38 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/* Master Typography */
-/* 
-    font-family: elektrix, sans-serif;
-    font-weight: 400; / 700;
-*/
 
-@font-face {
-  font-family: 'BareunDotum';
-  font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro2.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'BareunDotum';
-  font-style: normal;
-  font-weight: 700;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro3.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'BareunDotum';
-  font-style: normal;
-  font-weight: 300;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff') format('woff');
-}
-
-.bareundotum * {
- font-family: 'BareunDotum', sans-serif;
-}
-
-*{
+*
+{
     padding: 0;
     margin: 0;
     border: 0;
@@ -48,27 +19,27 @@ a {
 }
 
 p{
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: justify;
     hyphens: auto;
     -moz-text-align-last: center;
     text-align-last: center;
+    color: #9150c8;
 }
 
 h1 {
     text-align: center;
+    font-size: 2rem;
     line-height: 3rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 1rem;
+    color: #9150c8;
 
 }
 h1 span{
-    font-size: 2rem;
-    font-weight: 500;
 }
 
 body{
     font-size: 1rem; 
-    line-height: 1.5rem;
     pointer-events: initial;
 }
 
@@ -77,10 +48,9 @@ div{
 }
 
 span{
-    font-color: #9150c8;
 }
 
-/* frame */
+/* backgroundframe */
 
 .frame{
     left: 0;
@@ -96,26 +66,38 @@ span{
 
 .title{
     position: fixed;
-    top: -5rem;
-    width: 22.5rem;
-    left: calc(50% - 11.25rem);
-    z-index: 1000;
+    top: -50px;
+    width: 800px;
+    left: calc(50% - 400px);
+    z-index: 500;
     pointer-events: auto;
 }
 
 .title-bottom{
     position: fixed;
-    bottom: -12.5rem;
-    width: 22.5rem;
-    left: calc(50% - 11.25rem);
-    z-index: 1000;
+    bottom: -140px;
+    width: 800px;
+    left: calc(50% - 400px);
+    z-index: 500;
 }
 
 .logo-img{
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 
     -webkit-filter: drop-shadow( 0px 0px 0.2rem #9150c8 ); 
-    filter: drop-shadow( 0px 0px 0.2rem #9150c8 );
+    filter: drop-shadow( 0px 0px 0.2rem #9150c8 );*/
 }
+
+.sticker-btn{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 2000;
+    width: 160px;
+    height: 40px;
+    -webkit-filter: drop-shadow( 0px 0px 20px #9150c8 ); 
+    filter: drop-shadow( 0px 0px 20px #9150c8 );*/
+}
+
 
 .wrapper{
     padding-left: 25vw;
@@ -247,6 +229,7 @@ span{
 .post-list a{
     color: #fff !important;
 }
+
 
 
 .draggable{
