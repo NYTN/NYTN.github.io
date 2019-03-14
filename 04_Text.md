@@ -1,5 +1,6 @@
 ---
 layout: page
+menu-title: Text
 title: Text
 permalink: /text/
 ---

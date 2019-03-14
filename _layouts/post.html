@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry" itemscope temtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <p class="caption">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}{{ page.date | date: date_format }}
-      </time></p>
+        {%- assign date_format = site.minima.date_format | default: "%Y.%m.%-d" -%}{{ page.date | date: date_format }}
+      </time> <br>
+      {{ page.at | escape }}<br>
+        {{ page.who | escape }}
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

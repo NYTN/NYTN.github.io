@@ -1,5 +1,6 @@
 ---
 layout: post
+menu-title: Introduction
 title: Introduction
 permalink: /introduction/
 ---

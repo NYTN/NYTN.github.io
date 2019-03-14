@@ -19,10 +19,6 @@
   src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunDotum/BareunDotumOTFPro1.woff') format('woff');
 }
 
-.bareundotum * {
- font-family: 'BareunDotum', sans-serif;
-}
-
 @font-face {
     font-family: 'Covik Sans Mono_Regular';
     src:    url('/assets/f/Covik_Sans_Mono-Regular.woff') format('woff'),
@@ -31,33 +27,22 @@
     font-style: normal;
 }
 
-
-span.ml-en {
-  font-family: 'Covik Sans Mono_Regular', sans-serif;
-    font-size: 109%;
+.bareundotum * {
+ font-family: 'BareunDotum', sans-serif;
 }
 
 span.ml-ko {
   font-family: 'BareunDotum', sans-serif;
+    font-size: 98%;
   font-weight: 300;
   /*below two lines are for baseline shift */
   position:relative;
-  top:-1px;
-
+    top: -0.01rem;
 }
 
-span.ml-num {
-  font-family: 'Covik Sans Mono_Regular', sans-serif;
-  /*below two lines are for baseline shift */
-  position: relative;
-  font-size: 109%;
-  top:0;
-}
-
-span.ml-punct {
-  font-family: 'Covik Sans Mono_Regular', sans-serif;
-  /*below two lines are for baseline shift */
-  position: relative;
-  font-size: 109%;
-  top:0;
+.ml-parentheses {
+  /* specific style for parentheses */
+  /* shifting baseline */
+  position:relative;
+  top: 2rem;
 }

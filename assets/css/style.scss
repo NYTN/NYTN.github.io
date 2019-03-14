@@ -20,6 +20,7 @@ a {
 
 p{
     line-height: 1.5rem;
+    letter-spacing: 0.05rem;
     text-align: justify;
     hyphens: auto;
     -moz-text-align-last: center;
@@ -30,8 +31,9 @@ p{
 h1 {
     text-align: center;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
     padding-bottom: 1rem;
+    font-weight: normal;
     color: #9150c8;
 
 }
@@ -39,8 +41,19 @@ h1 span{
 }
 
 body{
-    font-size: 1rem; 
+    font-family: 'Covik Sans Mono_Regular', sans-serif;
     pointer-events: initial;
+}
+
+.caption{
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.listing{
+    text-align: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
 }
 
 div{
@@ -48,6 +61,13 @@ div{
 }
 
 span{
+    
+}
+
+.post-content li{
+    color: #9150c8;
+    text-indent: -1.5em;
+    padding-left: 1.5em;
 }
 
 /* backgroundframe */
@@ -87,15 +107,26 @@ span{
     filter: drop-shadow( 0px 0px 0.2rem #9150c8 );*/
 }
 
-.sticker-btn{
+.sticker-btn-wrapper{
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    bottom: -20px;
+    left: 0;
+    z-index: 1500;
+    pointer-events: none
+}
+
+#sticker-btn{
     position: fixed;
     bottom: 30px;
     left: 30px;
-    z-index: 2000;
     width: 160px;
     height: 40px;
+        z-index: 1500;
+    cursor:pointer;
     -webkit-filter: drop-shadow( 0px 0px 20px #9150c8 ); 
-    filter: drop-shadow( 0px 0px 20px #9150c8 );*/
+    filter: drop-shadow( 0px 0px 20px #9150c8 );
 }
 
 
@@ -104,12 +135,16 @@ span{
     padding-right: 25vw;
 }
 
-.menu{
+#menu{
     pointer-events: initial;
+    width: 3rem;
+    height: 3rem;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 7000;
+    background-color: #000;
+    overflow: hidden;
 }
 
 #menu-list{
@@ -117,7 +152,7 @@ span{
     top: 0;
     right: 0;
     display: none;
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     z-index: 5000;
     pointer-events: initial;
@@ -173,9 +208,12 @@ span{
 }
 
 .post{
-    padding-top: 20vw;
+    padding-top: 10.5rem;
     padding-bottom: 12.5vw;
 }
+
+.post-header{
+    margin-bottom: 2.5rem;}
 
 .post-header-conv{
     height: 100vh;
@@ -196,7 +234,7 @@ span{
     width: 100vw;
     height: 100vh;
     padding-left: 2.5vw;
-        padding-right: 2.5vw;
+    padding-right: 2.5vw;
     padding-top: 12.5vw;
     display: block;
     position: fixed;
@@ -231,11 +269,10 @@ span{
 }
 
 
-
 .draggable{
     width: auto;
     height: auto;
-    z-index: 3000;
+    z-index: 5000;
     display: block;
     pointer-events: auto;
     width: auto;
@@ -244,4 +281,10 @@ span{
     min-height: 20px;
     max-height: 140px;
     max-width: 140px;
+    cursor: grab;
+    position: absolute;
+}
+
+.draggable:active{
+    cursor: grabbing;
 }
