@@ -2,7 +2,6 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-
 *
 {
     padding: 0;
@@ -16,27 +15,97 @@ html{
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-p{
+a:visited { text-decoration: none; 
+color: inherit;}
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+hr{
+    height: 1px;
+    color: #9150c8;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    background-color: #9150c8;
+}
+
+.post-content{
+    text-align: center;}
+
+.post-content p{
     line-height: 1.5rem;
-    letter-spacing: 0.05rem;
     text-align: justify;
     hyphens: auto;
     -moz-text-align-last: center;
     text-align-last: center;
     color: #9150c8;
+    margin-bottom: 1.25rem;
+}
+
+.post-content li{
+    color: #9150c8;
+    text-align: left;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    margin-bottom: 0;
+}
+
+blockquote p{
+    padding: 2rem;
+    border-bottom: 1px #9150c8 solid;
+    border-top: 1px #9150c8 solid;
+}
+
+blockquote {
+    margin-bottom: 2rem;
+}
+
+.post-header p{
+    text-align: center;
+    color: #9150c8;
+}
+
+.post-content sup a{
+    color: #000;
+    margin-left: 2px;
+    border-bottom: 0px #fff;
+}
+
+.footnotes li p{
+    color: #9150c8;
+    text-align: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1rem !important;
+    margin-bottom: 0;
+    
+}
+
+.footnotes{
+    font-size: 0.8rem;
+}
+
+.post-content a{
+    padding-bottom: 1px;
+    border-bottom: 1px #9150c8 dotted;
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
     line-height: 2.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-weight: normal;
     color: #9150c8;
-
+    word-break: keep-all;
+    word-wrap: break-all;
+    letter-spacing: 1px;
+    word-spacing: .5px;
 }
+
 h1 span{
 }
 
@@ -47,8 +116,12 @@ body{
 
 .caption{
     font-size: 0.8rem;
-    line-height: 1.25rem;
-}
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center !important;
+    word-break: keep-all;
+    word-wrap: break-all;
+    }
 
 .listing{
     text-align: left;
@@ -62,12 +135,6 @@ div{
 
 span{
     
-}
-
-.post-content li{
-    color: #9150c8;
-    text-indent: -1.5em;
-    padding-left: 1.5em;
 }
 
 /* backgroundframe */
@@ -133,6 +200,11 @@ span{
 .wrapper{
     padding-left: 25vw;
     padding-right: 25vw;
+}
+
+.wrapper-text{
+    padding-left: 20vw;
+    padding-right: 33.33vw;
 }
 
 #menu{
@@ -207,7 +279,61 @@ span{
     z-index: -10;
 }
 
+.post-list-text{
+    width: 65vw;
+    text-align: left;
+    height: auto;
+    padding-left:1rem;
+    padding-right: 1rem;
+    padding-top: .75rem;
+    padding-bottom: 0.75rem;
+    border: 0px;
+    background-color: #fff;
+    -webkit-filter: drop-shadow( 0px 0px 7px #9150c8 ); 
+    filter: drop-shadow( 0px 0px 7px #9150c8 );
+    box-shadow: 0px 0px 1rem -.5rem #9150c8;
+    position: relative;
+    left: 12.5vw;
+    vertical-align: top;
+    margin-bottom: 2rem;
+}
+
+.post-list-text:nth-of-type(even){
+    left: 17.5vw;
+}
+
+.post-list-text:nth-of-type(1){
+    margin-top: 5rem;
+}
+
+.post-list-text:hover{
+    transform: translate(-0.25rem, -0.25rem);
+}
+
+
+.text-title{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: left;
+    text-align-last: left;
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #9150c8;
+}
+
+.post-detail{
+    text-align: left !important;
+    text-align-last: left !important;
+        color: #9150c8;
+
+}
+
 .post{
+    padding-top: 10.5rem;
+    padding-bottom: 12.5vw;
+}
+
+.post-text{
     padding-top: 10.5rem;
     padding-bottom: 12.5vw;
 }

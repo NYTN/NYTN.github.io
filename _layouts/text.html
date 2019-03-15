@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="page-wrapper">
+    {% for post in site.categories.text %}
+    <div class="post-list-text"><a href="{{ post.url }}">
+    <p class="text-title">{{ post.title }}<br>&#8212; {{post.subtitle}}
+        <p class="post-detail">        {%- assign date_format = site.minima.date_format | default: "%Y.%m.%-d" -%}{{ post.date | date: date_format }}<span style="margin-left:2rem;">{{ post.author }}</span></p></a></div>
+    {% endfor %}
+</div>

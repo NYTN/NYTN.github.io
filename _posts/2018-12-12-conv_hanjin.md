@@ -2,8 +2,8 @@
 layout: post-conv
 title:  "Conversation with 한진"
 date:   2018-12-12 20:18:09 +0900
-categories: Conversation
 main-img: /img/img7.jpg
+categories: [Conversation]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
