@@ -558,7 +558,7 @@ span{
 }
 
 
-@media (max-device-width: 320px) {
+@media screen and (max-width: 500px) {
     .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
@@ -631,7 +631,7 @@ span{
     }
 }
 
-@media (max-device-width: 641px) {
+@media screen and (max-width: 979px) {
     .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
@@ -704,10 +704,11 @@ span{
     }
 }
 
-@media (max-device-width:961px) {
-    html{font-size: 20px;}
+@media screen and (min-width: 980px) {
+    /*html{font-size: 20px;}
     .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
     .post-text{padding-top: 10rem;}
     .title{top: -60px; width:65%; left:calc(50% - 32.5%);}
-    .title-bottom{bottom: -170px; width:65%; left:calc(50% - 32.5%);}
+    .title-bottom{bottom: -170px; width:65%; left:calc(50% - 32.5%);}*/
 }
+
