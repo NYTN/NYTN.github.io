@@ -15,8 +15,12 @@
     
 <script>
   $(document).ready(function(e){
-    $("p, li, h1, h2").multilingual(["ko"]);      
+    $("p, li, h1, h2").multilingual(["ko"]);
+    $("p").has("img").css({padding: 0});
+    $("p").has("img").css({textAlign: "center"});
+
   });
+    
 </script>
     
 

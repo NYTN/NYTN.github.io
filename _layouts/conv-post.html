@@ -1,19 +1,29 @@
 ---
 layout: default
 ---
-<div class="wrapper">
+<div class="conv_wrapper">
 
-    <article class="post-text h-entry" itemscope temtype="http://schema.org/BlogPosting">
+<article class="h-entry" itemscope temtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }} &#8212; {{ page.subtitle }} </h1>
-    <p class="caption"> {{ page.author }}. {{ page.authordescription}} </p>
+    <div class="conv-title-img" style="background-image:url('/img/{{  page.folder }}/1.png')">
+    
+    <h1 id="#conv-title" class="p-name" itemprop="name headline">{{ page.title | escape }} </h1>   <p>{{ page.caption }}</p>
+    </div>
   </header>
 
-  <div markdown="1" class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <div markdown="1" class="conv-post-content e-content" itemprop="articleBody">
+       <p class="caption"> {{ page.artist-ko }} </p>
+       <p class="caption"> 
+      {% for item in page.link %}
+           <a href="{{ item in page.link }}" target="_blank">{{ item in page.link }}</a><br>
+      {% endfor %}</p><br>
+       <p class="caption" style="margin-bottom: 2rem;"> {{ page.authordescription}} </p>
 
+      {{ content }}
+      
+      
+  </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
     
@@ -21,9 +31,9 @@ layout: default
 
 
 {% if page.previous_in_category != nil %}
-	<a href="{{page.previous_in_category.url}}" id="prev"><img src="/assets/SVG/next.svg"></a>
+	<a href="javascript:history.back()" id="prev"><img src="/assets/SVG/forward.svg"></a>
 {% endif %}
 
 {% if page.next_in_category != nil %}
-	<a href="{{ page.next_in_category.url }}" id="next"><img src="/assets/SVG/forward.svg"></a>
+	<a href="{{ page.next_in_category.url }}" id="next"><img src="/assets/SVG/next.svg"></a>
 {% endif %}

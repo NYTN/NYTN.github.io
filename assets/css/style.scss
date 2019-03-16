@@ -170,9 +170,7 @@ span{
 }
 
 .logo-img{
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 
-    -webkit-filter: drop-shadow( 0px 0px 0.2rem #9150c8 ); 
-    filter: drop-shadow( 0px 0px 0.2rem #9150c8 );*/
+    
 }
 
 .sticker-btn-wrapper{
@@ -209,6 +207,11 @@ span{
     padding-right: 33.33vw;
 }
 
+.conv_wrapper{
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
 #menu{
     pointer-events: initial;
     width: 3rem;
@@ -219,18 +222,20 @@ span{
     z-index: 7000;
     background-color: #000;
     overflow: hidden;
+    
 }
 
 #menu-list{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
     width: 35vw;
-    height: 100vh;
+    height: 100%;
     z-index: 5000;
     pointer-events: initial;
     background-image: linear-gradient(#9150c8, rgba(255,0,0,0));
+    overflow: hidden;
 }
 
 #menu-list ul{
@@ -313,7 +318,9 @@ span{
 }
 
 
+
 .text-title{
+    
     font-size: 1.5rem;
     line-height: 2.2rem;
     text-align: left;
@@ -321,6 +328,7 @@ span{
     padding: 0;
     margin-bottom: 1rem;
     color: #9150c8;
+
 }
 
 .post-detail{
@@ -338,6 +346,85 @@ span{
 .post-text{
     padding-top: 10.5rem;
     padding-bottom: 12.5vw;
+}
+
+.conv-title-img{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: contain;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -500;
+    vertical-align: middle;
+    color: #fff !important;
+}
+
+.conv-title-img h1{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: justify !important;
+    font-size: 3rem;
+    color: #fff !important;
+    margin-top: calc(50vh - 1.5rem);
+    padding-bottom: 0;
+}
+
+.conv-title-img h1:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+#conv-title{
+    height: 3rem;
+    overflow: hidden;
+    line-height: 1rem;
+}
+
+.conv-title-img p{
+    color: #fff !important;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+}
+
+.conv-post-content{
+    margin-top: 110vh;
+    color: #9150c8;
+    text-align: justify;
+    padding-bottom: 5rem;
+}
+
+.conv-post-content p a{
+    border-bottom: 1px #9150c8 dotted;
+}
+
+.conv-post-content blockquote{
+    padding-right: 30vw;
+    padding-left: 0 !important;
+    border: 0px !important;
+    text-align: justfy;
+    margin-bottom: 0;
+}
+.conv-post-content blockquote p{
+    padding-left: 0 !important;
+    border: 0px !important;
+    text-align: justfy;
+}
+
+.conv-post-content p{
+    padding-left: 30vw;
+}
+
+.conv-post-content .caption{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.conv-post-content img{
+    width:70%;
+    height: auto;
 }
 
 .post-header{
@@ -363,7 +450,7 @@ span{
     height: auto;
     padding-left: 2.5vw;
     padding-right: 5vw;
-    padding-top: 15rem; 
+    padding-top: 20vh; 
     padding-bottom: 2.5rem;
     display: block;
     position: absolute;
@@ -376,7 +463,7 @@ span{
 
 .post-list{
     width: 20vw;
-    min-width: 350px;
+    min-width: 320px;
     height: auto;
     display: block;
     position: relative; 
@@ -476,14 +563,15 @@ span{
         padding-right: 17.5vw;
     }
     #menu-list{
-        width: 50vw;}
+        width: 50vw;
+    }
     .title{
-        top: -4%;
+        top: -8%;
         width: 70%;
         left: calc(50% - 35%);
     }
     .title-bottom{
-        bottom: -13%;
+        bottom: -17%;
         width: 70%;
         left: calc(50% - 35%);
     }
