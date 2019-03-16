@@ -33,7 +33,8 @@ hr{
 }
 
 .post-content{
-    text-align: center;}
+    text-align: center;
+}
 
 .post-content p{
     line-height: 1.5rem;
@@ -252,7 +253,7 @@ span{
 
 #menu-list li:hover{
     background-color: #000;
-    font-color: #9150c8 !important;
+    color: #9150c8 !important;
 }
 
 
@@ -421,4 +422,61 @@ span{
 
 .draggable:active{
     cursor: grabbing;
+}
+
+
+#prev{
+    position: fixed;
+    top: 29px;
+    left: 29px;
+    z-index: 50000;
+    width:40px;
+    height: 40px;
+}
+
+#next{
+    position: fixed;
+    bottom: 29px;
+        width:40px;
+    height: 40px;
+    right: 29px;
+    z-index: 50000;
+}
+
+
+
+@media (max-width: 600px) {
+    .wrapper{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #menu-list{
+        width: 70vw;
+    }
+    .title, .title-bottom{
+        width: 80%;
+    }
+    .sticker-btn-wrapper, #sticker-btn{
+        display: none;   
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper{
+        padding-left: 17.5vw;
+        padding-right: 17.5vw;
+    }
+    #menu-list{
+        width: 50vw;}
+    .title{
+        top: -4%;
+        width: 70%;
+        left: calc(50% - 35%);
+    }
+    .title-bottom{
+        bottom: -13%;
+        width: 70%;
+        left: calc(50% - 35%);
+    }
+    
 }

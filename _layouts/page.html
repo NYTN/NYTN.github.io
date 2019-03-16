@@ -3,10 +3,17 @@ layout: default
 ---
 <div class="page-wrapper">
     {% for post in site.categories.Conversation %}
+<<<<<<< HEAD
     <a href="{{ post.url }}">
         <div class="post-list" style="background-image:url(/img/{{ post.thumbnail }})">
             {{ post.artist-ko }}<br>{{ post.artist-en }}
         </div>
     </a>
+=======
+    
+    <div class="post-list">
+    <p><a href="{{ post.url }}">{{ post.title }}</a><p></div>
+    
+>>>>>>> be15cb5e49655c22509aee58ccd7c11fa486ef7f
     {% endfor %}
 </div>
