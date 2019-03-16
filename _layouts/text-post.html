@@ -10,7 +10,7 @@ layout: default
     <p class="caption"> {{ page.author }}. {{ page.authordescription}} </p>
   </header>
 
-  <div markdown="1"  class="post-content e-content" itemprop="articleBody">
+  <div markdown="1" class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -18,3 +18,12 @@ layout: default
 </article>
     
 </div>
+
+
+{% if page.previous_in_category != nil %}
+	<a href="{{page.previous_in_category.url}}" id="prev"><img src="/assets/SVG/next.svg"></a>
+{% endif %}
+
+{% if page.next_in_category != nil %}
+	<a href="{{ page.next_in_category.url }}" id="next"><img src="/assets/SVG/forward.svg"></a>
+{% endif %}

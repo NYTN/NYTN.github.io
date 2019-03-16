@@ -16,7 +16,8 @@ $("button").click(function(e){
     $("#menu-list").toggle("slide", {direction: "right" }, 500);
 
     if($("#menu").attr("trigger")==="0"){
-        $("#menu").animate({"right":"35vw"}, 500);
+        var w = $( '#menu-list' ).css( 'width' );
+        $("#menu").animate({"right":w}, 500);
         $("#menu").attr("trigger", "1");
     }
     else{
