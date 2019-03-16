@@ -515,6 +515,7 @@ span{
     text-align: center;    
     margin-top: 60%;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .draggable{
@@ -540,8 +541,8 @@ span{
 
 #prev{
     position: fixed;
-    top: 29px;
-    left: 29px;
+    top: 1.25rem;
+    left: 1.25rem;
     z-index: 50000;
     width:40px;
     height: 40px;
@@ -549,48 +550,164 @@ span{
 
 #next{
     position: fixed;
-    bottom: 29px;
+    bottom: 1.25rem;
         width:40px;
     height: 40px;
-    right: 29px;
+    right: 1.25rem;
     z-index: 50000;
 }
 
 
-
-@media (max-width: 600px) {
+@media (max-device-width: 320px) {
     .wrapper{
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
     }
+    
+    html{
+        font-size: 16px;
+    }
+    
+    .page-wrapper{
+        padding-top: 0vh;
+    }
+    
+    .post{
+        padding-top: 7rem;
+    }
+    
+    .conv_wrapper{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
     #menu-list{
-        width: 70vw;
+        width: 75vw;
     }
-    .title, .title-bottom{
-        width: 80%;
+    
+    .post-list img{
+        width: 80vw;
+        min-width:80%; 
+        max-width:100%;
+    }
+    .conv-title-img h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: calc(45vh - 2rem);
+    }
+    
+    .conv-post-content blockquote{
+        padding-right: 15vw;
+    }
+    .conv-post-content p{
+        padding-left: 15vw;
+    }
+    
+    .conv-post-content .caption{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    .post-text{
+        padding-top: 6rem;
+    }
+    
+    .caption{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .title{
+        top: -30px;
+        width: 75%;
+        left: calc(50% - 37.5%);
+    }
+    .title-bottom{
+        bottom: -90px;
+        width: 75%;
+        left: calc(50% - 37.5%);
     }
     .sticker-btn-wrapper, #sticker-btn{
         display: none;   
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-device-width: 641px) {
     .wrapper{
-        padding-left: 17.5vw;
-        padding-right: 17.5vw;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
     }
+    
+    html{
+        font-size: 16px;
+    }
+    
+    .page-wrapper{
+        padding-top: 12.5vh;
+    }
+    
+    .post{
+        padding-top: 7rem;
+    }
+    
+    .conv_wrapper{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
     #menu-list{
         width: 50vw;
     }
-    .title{
-        top: -8%;
-        width: 70%;
-        left: calc(50% - 35%);
+    
+    .post-list img{
+        width: 80vw;
+        min-width:80%; 
+        max-width:100%;
     }
-    .title-bottom{
-        bottom: -17%;
-        width: 70%;
-        left: calc(50% - 35%);
+    .conv-title-img h1{
+        font-size: 3rem;
+        line-height: 2.25rem;
+        margin-top: calc(50vh - 2.25rem);
     }
     
+    .conv-post-content blockquote{
+        padding-right: 15vw;
+    }
+    .conv-post-content p{
+        padding-left: 15vw;
+    }
+    
+    .conv-post-content .caption{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    .post-text{
+        padding-top: 7.5rem;
+    }
+    
+    .caption{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .title{
+        top: -30px;
+        width: 75%;
+        left: calc(50% - 37.5%);
+    }
+    .title-bottom{
+        bottom: -90px;
+        width: 75%;
+        left: calc(50% - 37.5%);
+    }
+    .sticker-btn-wrapper, #sticker-btn{
+        display: none;   
+    }
+}
+
+@media (max-device-width:961px) {
+    html{font-size: 20px;}
+    .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
+    .post-text{padding-top: 10rem;}
+    .title{top: -60px; width:65%; left:calc(50% - 32.5%);}
+    .title-bottom{bottom: -170px; width:65%; left:calc(50% - 32.5%);}
 }
