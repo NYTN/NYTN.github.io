@@ -194,6 +194,7 @@ span{
     cursor:pointer;
     -webkit-filter: drop-shadow( 0px 0px 20px #9150c8 ); 
     filter: drop-shadow( 0px 0px 20px #9150c8 );
+    box-shadow: 0px 0px 1rem -.5rem #9150c8;
 }
 
 
@@ -375,10 +376,7 @@ span{
     width: 20vw;
     height: 30vw;
     padding: 2rem;
-    border-radius: 50%;
-    behavior: url(PIE.htc);
     display: block;
-    background: #9150c8;
     box-shadow: 0px 0px 3rem #9150c8;
     vertical-align: middle;
     display: inline-grid;
@@ -386,12 +384,22 @@ span{
     margin-left: 5vw;
     margin-bottom: 10vw;
     word-break: keep-all;
-    background-image: url(/img/img7.jpg);
+    color: #fff !important;
+    font-size: 1.25rem;
     background-position: center;
+    background-size: cover;
+    -webkit-filter: drop-shadow( 0px 0px 7px #9150c8 ); 
+    filter: drop-shadow( 0px 0px 7px #9150c8 );
+    box-shadow: 0px 0px 1rem -.5rem #9150c8;
+    -webkit-clip-path: url(/assets/svg/container_1.svg);
+    clip-path: url(/assets/svg/container_1.svg);
 }
 
-.post-list a{
-    color: #fff !important;
+.page_wrapper a:first-child {
+    margin-top: 10rem;
+}
+.page_wrapper a:last-child {
+    margin-bottom: 30vw;
 }
 
 
