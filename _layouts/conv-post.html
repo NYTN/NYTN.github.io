@@ -13,12 +13,18 @@ layout: default
   </header>
 
   <div markdown="1" class="conv-post-content e-content" itemprop="articleBody">
-       <p class="caption"> {{ page.artist-ko }} </p>
-       <p class="caption"> 
-      {% for item in page.link %}
-           <a href="{{ item in page.link }}" target="_blank">{{ item in page.link }}</a><br>
-      {% endfor %}</p><br>
-       <p class="caption" style="margin-bottom: 2rem;"> {{ page.authordescription}} </p>
+      <p class="caption">
+          {{ page.artist-ko }}
+      </p>
+      <p class="caption"> 
+          {% for item in page.link %}
+          <a href="{{ item in page.link }}" target="_blank">
+               {{ item in page.link }}</a>
+           <br>
+      {% endfor %}
+      </p>
+      <br>
+      <p class="caption" style="margin-bottom: 2rem;">{{ page.authordescription}}</p>
 
       {{ content }}
       
