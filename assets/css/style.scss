@@ -334,7 +334,7 @@ span{
 .post-detail{
     text-align: left !important;
     text-align-last: left !important;
-        color: #9150c8;
+    color: #9150c8;
 
 }
 
@@ -359,6 +359,11 @@ span{
     z-index: -500;
     vertical-align: middle;
     color: #fff !important;
+    background-color: rgba(145, 80, 200, 0.2) !important;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 .conv-title-img h1{
@@ -369,6 +374,9 @@ span{
     color: #fff !important;
     margin-top: calc(50vh - 1.5rem);
     padding-bottom: 0;
+    line-height: 3rem;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 .conv-title-img h1:after {
@@ -398,7 +406,15 @@ span{
 
 .conv-post-content p a{
     border-bottom: 1px #9150c8 dotted;
+    padding-bottom: 1px;
 }
+
+.conv-post-content hr + p{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: center;
+}
+
 
 .conv-post-content blockquote{
     padding-right: 30vw;
@@ -423,8 +439,9 @@ span{
 }
 
 .conv-post-content img{
-    width:70%;
+    min-width: 300px;
     height: auto;
+    max-width:100%;
 }
 
 .post-header{

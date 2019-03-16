@@ -19,11 +19,8 @@ layout: default
     
 </div>
 
-
-{% if page.previous_in_category != nil %}
-	<a href="{{page.previous_in_category.url}}" id="prev"><img src="/assets/SVG/next.svg"></a>
-{% endif %}
+<a href="javascript:history.back()" id="prev"><img src="/assets/SVG/forward.svg"></a>
 
 {% if page.next_in_category != nil %}
-	<a href="{{ page.next_in_category.url }}" id="next"><img src="/assets/SVG/forward.svg"></a>
+	<a href="{{ page.next_in_category.url }}" id="next"><img src="/assets/SVG/next.svg"></a>
 {% endif %}
