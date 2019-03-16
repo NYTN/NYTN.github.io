@@ -3,17 +3,15 @@ layout: default
 ---
 <div class="page-wrapper">
     {% for post in site.categories.Conversation %}
-<<<<<<< HEAD
     <a href="{{ post.url }}">
-        <div class="post-list" style="background-image:url(/img/{{ post.thumbnail }})">
-            {{ post.artist-ko }}<br>{{ post.artist-en }}
+        <div class="post-list">
+            <img src="/img/{{ post.folder }}/thumbnail_hover.png" onmouseover="this.src='/img/{{ post.folder }}/thumbnail.png'" onmouseout="this.src='/img/{{ post.folder }}/thumbnail_hover.png'">
+            <div>{{ post.artist-ko }}<br>{{ post.artist-en }}</div>
         </div>
+        
     </a>
-=======
     
-    <div class="post-list">
-    <p><a href="{{ post.url }}">{{ post.title }}</a><p></div>
-    
->>>>>>> be15cb5e49655c22509aee58ccd7c11fa486ef7f
     {% endfor %}
 </div>
+
+
