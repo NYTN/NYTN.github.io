@@ -87,6 +87,7 @@ blockquote {
 
 .footnotes{
     font-size: 0.8rem;
+    overflow: hidden;
 }
 
 .post-content a{
@@ -180,7 +181,8 @@ span{
     bottom: -20px;
     left: 0;
     z-index: 1500;
-    pointer-events: none
+    pointer-events: none;
+    overflow: hidden;
 }
 
 #sticker-btn{
