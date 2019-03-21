@@ -9,67 +9,6 @@
     <link rel="stylesheet" href="{{ "/assets/css/multilingual.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/hamburgers.css" | relative_url }}">
     
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
-    
-<script>
-  $(document).ready(function(e){
-    $("p, li, h1, h2").multilingual(["ko"]);
-    $("p").has("img").css({padding: 0});
-    $("p").has("img").css({textAlign: "center"});
-  });
-    
-</script>
-    
-
-<script type="text/javascript">
-  $(document).ready(function() {
-      var image = new Array ();
-      image[0] = "https://media.giphy.com/media/1423iyoom4KZFe/giphy.gif";
-      image[1] = "https://media.giphy.com/media/3o7aDcEbGEsFAwSL0Q/giphy.gif";
-      image[2] = "https://media.giphy.com/media/3o7aCVzTmaVkDWpXYk/giphy.gif";
-      image[3] = "https://media.giphy.com/media/l378zAbEucMfNUg1i/giphy.gif";
-      image[4] = "https://media.giphy.com/media/xUOwG7EjZFKw8CELpm/giphy.gif";
-      image[5] = "https://media.giphy.com/media/3ov9k5xiB0LvXnE43C/giphy.gif";
-      image[6] = "https://media.giphy.com/media/l378cUganYM3JGOS4/giphy.gif";
-      image[7] = "https://media.giphy.com/media/YFDs0fwgAVQ96WL19h/giphy.gif";
-      image[8] = "https://media.giphy.com/media/OOSUTK8lJT2nd5cAuH/giphy.gif";
-      image[9] = "https://media.giphy.com/media/1fhj2RprUOpqCObj2J/giphy.gif";
-      image[10] = "https://media.giphy.com/media/8FryAist7dyO6qAKMM/giphy.gif";
-      image[11] = "https://media.giphy.com/media/5PhYwxyNXDIIhnWrEZ/giphy.gif";
-      image[12] = "https://media.giphy.com/media/l2YOEiksLN4iAoYOQ/giphy.gif";
-      image[13] = "https://media.giphy.com/media/xT9IgHjmILyCrpCyZO/giphy.gif";
-      image[14] = "https://media.giphy.com/media/l378cUganYM3JGOS4/giphy.gif";
-      image[15] = "https://media.giphy.com/media/VMBcS9qLM2uXK/giphy.gif";
-      image[16] = "https://media.giphy.com/media/5PhYwxyNXDIIhnWrEZ/giphy.gif";
-      image[17] = "https://media.giphy.com/media/Q6nmoKHjaDSus/giphy.gif";
-      image[18] = "https://media.giphy.com/media/3gRWfmZMI0Cb2Hoaye/giphy.gif";
-      image[19] = "https://media.giphy.com/media/8Am4Njdu7imzLbnIhc/giphy.gif";
-      image[20] = "https://media.giphy.com/media/3LxOgWTA6GkgeEhdOG/giphy.gif";
-      
-    $('#sticker-btn').click(function(){
-    $('.frame').append("<img class='random' />");
-    $('.random').each(function(i,el){
-        var tLeft = Math.floor(Math.random()*1180),
-            tTop  = Math.floor(Math.random()*700);
-        var size = image.length
-        var x = Math.floor(size*Math.random())
-        $(this).attr('src', image[x]);  
-        $(el).css({position:'absolute', left: tLeft, top: tTop});
-        $(this).attr('class', 'draggable');
-        $(".draggable").draggable();
-    });
-    
-
-    
-    });
-      
-    
-});
-</script>
-    
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

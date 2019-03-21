@@ -82,7 +82,7 @@ blockquote {
     text-align-last: left;
     line-height: 1rem !important;
     margin-bottom: 0;
-    
+    overflow: hidden;
 }
 
 .footnotes{
@@ -196,6 +196,7 @@ span{
     -webkit-filter: drop-shadow( 0px 0px 20px #9150c8 ); 
     filter: drop-shadow( 0px 0px 20px #9150c8 );
     box-shadow: 0px 0px 1rem -.5rem #9150c8;
+    overflow: hidden;
 }
 
 
