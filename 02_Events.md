@@ -33,3 +33,7 @@ categories: [menu]
 <h1 class="post-title p-name" itemprop="name headline">아르코미디어 비평 총서 시리즈 - 미디어챕터1 발간 </h1>
 
 2018년 6월에 진행한 (Not) Your Typical Narcissist: A Screening 에서 다뤘던 작품을 위주로 쓴 “카메라와 신체, 그리고 상품: 동시대 여성 작가가 손에 든 것들”이 수록되었습니다. 
+
+![1](/img/event1.jpg)
+![1](/img/event2.jpg)
+![1](/img/event3.jpg)
