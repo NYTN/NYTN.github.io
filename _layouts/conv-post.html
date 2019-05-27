@@ -16,10 +16,16 @@ layout: default
       <p class="caption">{{ page.artist-ko }}</p>
       <p class="caption"> 
           {% for item in page.link %}
-          <a href="{{ item in page.link }}" target="_blank">{{ item in page.link }}</a><br>{% endfor %}
+          <a href="{{ item in page.link }}" target="_blank">
+              {{ item in page.link }}
+          </a>
+          <br>
+          {% endfor %}
       </p>
       <br>
-      <p class="caption" style="margin-bottom: 2rem;">{{ page.authordescription}}</p>
+      <p class="caption" style="margin-bottom: 2rem;">
+          {{ page.authordescription}}
+      </p>
 
       {{ content }}
       
