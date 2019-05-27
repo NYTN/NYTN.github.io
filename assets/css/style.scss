@@ -195,7 +195,7 @@ span{
     position: absolute;
     width: 220px;
     height: 100px;
-    bottom: -20px;
+    bottom: -1.25rem;
     left: 0;
     z-index: 1500;
     pointer-events: none;
@@ -667,8 +667,8 @@ span{
     }
     
     .conv_wrapper{
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
     }
     
     #menu-list{
@@ -681,16 +681,22 @@ span{
         max-width:100%;
     }
     .conv-title-img h1{
-        font-size: 3rem;
-        line-height: 4.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         margin-top: calc(50vh - 2.25rem);
     }
     
+    .conv-title-img p{
+        margin-top: -2rem;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+    
     .conv-post-content blockquote{
-        padding-right: 15vw;
+        padding-right: 12.5vw;
     }
     .conv-post-content p{
-        padding-left: 15vw;
+        padding-left: 12.5vw;
     }
     
     .conv-post-content .caption{
@@ -739,8 +745,8 @@ span{
     }
     
     .conv_wrapper{
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
     }
     
     #menu-list{
@@ -759,10 +765,10 @@ span{
     }
     
     .conv-post-content blockquote{
-        padding-right: 10vw;
+        padding-right: 6.25vw;
     }
     .conv-post-content p{
-        padding-left: 10vw;
+        padding-left: 6.25vw;
     }
     
     .conv-post-content .caption{
@@ -790,6 +796,7 @@ span{
         width: 100%;
         left: calc(50% - 50%);
     }
+ 
 
 }
 
