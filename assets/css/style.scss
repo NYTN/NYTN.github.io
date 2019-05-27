@@ -376,7 +376,7 @@ span{
     left:0;
     top:0;
     z-index: -500;
-    vertical-align: middle;
+    display: table;
     color: #fff !important;
     background-color: rgba(145, 80, 200, 0.2) !important;
     background-blend-mode: multiply;
@@ -385,17 +385,22 @@ span{
     text-align-last: center;
 }
 
+.conv-title-img-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .conv-title-img h1{
     padding-left: 15vw;
     padding-right: 15vw;
     text-align: justify !important;
     font-size: 3rem;
     color: #fff !important;
-    margin-top: calc(50vh - 1.5rem);
     padding-bottom: 0;
     line-height: 4.5rem;
     -moz-text-align-last: center;
     text-align-last: center;
+    vertical-align: middle;
 }
 
 .conv-title-img h1:after {
@@ -404,16 +409,17 @@ span{
     width: 100%;
 }
 
-#conv-title{
-    height: 3rem;
-    overflow: hidden;
-    line-height: 1rem;
-}
-
 .conv-title-img p{
     color: #fff !important;
     font-size: 0.8rem;
     margin-top: -1rem;
+}
+
+
+#conv-title{
+    height: 3rem;
+    overflow: hidden;
+    line-height: 1rem;
 }
 
 .conv-post-content{
@@ -470,7 +476,8 @@ span{
 }
 
 .post-header{
-    margin-bottom: 2.5rem;}
+    margin-bottom: 2.5rem;
+}
 
 .post-header-conv{
     height: 100vh;
@@ -577,7 +584,10 @@ span{
 }
 
 
-@media screen and (max-width: 500px) {
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 736px)
+    and (orientation:landscape) {
     .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
@@ -609,10 +619,16 @@ span{
         min-width:75%; 
         max-width:100%;
     }
+
     .conv-title-img h1{
         font-size: 2.5rem;
         line-height: 2.75rem;
-        margin-top: calc(45vh - 2rem);
+    }
+    
+    .conv-title-img p{
+        margin-top: -2rem;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
     }
     
     .conv-post-content blockquote{
@@ -647,6 +663,102 @@ span{
     }
 
 }
+
+
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 736px) 
+    and (orientation:portrait) {
+
+    .wrapper{
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+    
+    html{
+        font-size: 16px;
+    }
+    
+    .page-wrapper{
+        padding-top: 0vh;
+    }
+    
+    .post{
+        padding-top: 7rem;
+    }
+    
+    .conv_wrapper{
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+    
+    #menu-list{
+        width: 75vw;
+    }
+    
+    .post-list img{
+        width: 80vw;
+        min-width:80%; 
+        max-width:100%;
+    }
+    
+    
+    .conv-title-img h1{
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    
+    .conv-title-img p{
+        margin-top: -2rem;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+    
+    .conv-post-content blockquote{
+        padding-right: 6.25vw;
+    }
+    .conv-post-content p{
+        padding-left: 6.25vw;
+    }
+    
+    .conv-post-content .caption{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    
+    .post-text{
+        padding-top: 6rem;
+    }
+    
+    .caption{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .title{
+        top: -30px;
+        width: 100%;
+        left: calc(50% - 50%);
+    }
+    
+    .title-bottom{
+        bottom: -60px;
+        width: 100%;
+        left: calc(50% - 50%);
+    }
+ 
+
+}
+
+@media screen and (min-width: 980px) {
+    /*html{font-size: 20px;}
+    .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
+    .post-text{padding-top: 10rem;}
+    .title{top: -60px; width:65%; left:calc(50% - 32.5%);}
+    .title-bottom{bottom: -170px; width:65%; left:calc(50% - 32.5%);}*/
+}
+
+/*
 
 @media screen and (max-width: 979px) {
     .wrapper{
@@ -724,87 +836,4 @@ span{
     }
 
 }
-
-@media screen and (orientation:portrait) {
-
-    .wrapper{
-        padding-left: 12.5vw;
-        padding-right: 12.5vw;
-    }
-    
-    html{
-        font-size: 16px;
-    }
-    
-    .page-wrapper{
-        padding-top: 0vh;
-    }
-    
-    .post{
-        padding-top: 7rem;
-    }
-    
-    .conv_wrapper{
-        padding-left: 12.5vw;
-        padding-right: 12.5vw;
-    }
-    
-    #menu-list{
-        width: 75vw;
-    }
-    
-    .post-list img{
-        width: 80vw;
-        min-width:80%; 
-        max-width:100%;
-    }
-    .conv-title-img h1{
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin-top: calc(45vh - 2rem);
-    }
-    
-    .conv-post-content blockquote{
-        padding-right: 6.25vw;
-    }
-    .conv-post-content p{
-        padding-left: 6.25vw;
-    }
-    
-    .conv-post-content .caption{
-        padding-left: 7.5vw;
-        padding-right: 7.5vw;
-    }
-    
-    .post-text{
-        padding-top: 6rem;
-    }
-    
-    .caption{
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-    
-    .title{
-        top: -30px;
-        width: 100%;
-        left: calc(50% - 50%);
-    }
-    
-    .title-bottom{
-        bottom: -60px;
-        width: 100%;
-        left: calc(50% - 50%);
-    }
- 
-
-}
-
-@media screen and (min-width: 980px) {
-    /*html{font-size: 20px;}
-    .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
-    .post-text{padding-top: 10rem;}
-    .title{top: -60px; width:65%; left:calc(50% - 32.5%);}
-    .title-bottom{bottom: -170px; width:65%; left:calc(50% - 32.5%);}*/
-}
-
+*/
