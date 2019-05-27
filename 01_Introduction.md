@@ -1,18 +1,23 @@
 ---
 layout: post
-menu-title: Introduction
 title: Introduction
+menu-title: Introduction
 permalink: /introduction/
 categories: [menu]
 ---
+(Not) Your Typical Narcissist는 시각 문화와 미술 실천에서 찾아볼 수 있는 여성의 자기 전시와 비/관습적인 여성성의 표현에 대한 리서치 프로젝트이다. 이 프로젝트는 동시대 미술의 징후들을 엔터테인먼트 및 뷰티 산업 등이 쏟아내는 여성의 이미지와 그 양식, 현재 매체 환경에서 이미지가 생산, 매개되는 방식, 그리고 자신의 모습을 들여다보는 지극히 전통적인 모티프를 교차하여 살펴본다. 이때 ‘나르시시즘’은 이 리서치에서 중요한 역동으로 작용하는 양가성을 매개하는 개념이다. ‘걸리쉬’한 색을 쓰는 건 임파워링일까 아니면 오히려 그 반대일까? 여성 작가의 작업에서 젠더의 변수에 방점을 찍는 것은 정치적인 걸까 게으른 걸까? ‘나르시시스트’는 여성 혐오적인 오명일까 ‘야수파’가 그랬던 것처럼 반격하는 움직임에 대한 이름일까? 단순히 양분된 구도로는 살펴보기 어려운 이러한 쟁점을 다루되, (N)YTN은 미술사와 양식은 물론 미디어 환경과 기술 사용의 습관들을 주요 변수로 두고자 한다. 
 
-리서치 프로젝트 “(Not) Your Typical Narcissist”는 현대  사회에서  첨예한  논쟁  가운데  있는 여성의 이미지 메이킹을 비평적으로 고찰하고 시각문화·예술에 드러난 동시대 여성 이미지의 저항적 가능성을 살펴보고자 한다. 여성이 의복이나 메이크업, 장신구 등으로 스스로의 이미지를 꾸미고 표현하는 것은 한편으로 여성에 유독 엄격하게 적용되는 (성적) 엄숙주의를 타파하기 위한 전략이   되고, 여성의 신체에 대한 자기 결정권과 결부되어 해방적인 행위로 이해된다. 다른 한편으로 이는 강요된 여성성을 답습하는 퇴행, 즉 사회가 여성에게 비대칭적으로 부과한 ‘꾸밈노동’으로 여겨져 ‘탈코르셋’을 통해 타파해야 할 대상으로 설정된다.
+(Not) Your Typical Narcissist is a research project on the female self-display and the (un)conventional presentation of the ‘feminine’ in visual cultures and contemporary art. (N)YTN attempts to bring together young female artists’ practices and contents of the popular culture mostly from Korea, inviting due attention and discussion. In place of a generic survey, (N)YTN delves into the ambivalent relationship between individual artistic practices and the images/trends/styles promoted by the beauty and entertainment industry. With its popular connotation as an insult, the term “narcissism” carries the complex dynamics at work in this research: is using ‘girlish’ colors empowering or patronizing? Is bringing up the gender factor in female artists’ works political or reactionary? Is ‘narcissist’ a misogynic stigma or a name for a rebellious act as was the case for ‘Fauvism’? In exploring such agitations, (N)YTN attempts to pay careful attention to the media environment and the application of technology as demonstrated in the artworks as well as in the everyday life, exploring how the former triggers or is appropriated by the latter. As an online platform, (N)YTN showcases and archives Korean emerging female artists’ practices while inviting intellectuals and distinct individuals’ viewpoints through original as well as translated articles.
 
-
-여성의 외모 꾸미기에 대한 선행연구는 김홍희, 김주현, 신혜경 등과 같은 미학자들이 나르시시즘과 그로테스크를 중점으로 검토한 바 있다. 이들의 선행 연구는 미학사 전반을 검토하며 뿌리 깊은 여성혐오의 습관을 추적하고 새로운 미학 성립의 기반을 다진 점, 그리고 페미니즘 미술을 나르시시즘 및 그로테스크 미학의 계보로 정립했다는 점에서 본 연구의 기반이 된다. 하지만 이들의 논의는 이미 미술사로 편입된 서구의 작품을 주 분석 대상으로 선정했으며, 미술사와 미학의 아카데미 영역에서 이루어진 연구였기 때문에 동시대 여성들이 처한 시각환경과 그 안에서의 구체적인 상황과 갈등, 선택 등을 조명하지 못했다는 한계가 있다. 이에 본 연구는 기존 논의를 기반으로 하되 급속한 변화를 겪은 시각환경 및 조건을 주요한 변수로 설정하고, 이를 비판적으로 고찰하며 자신만의 접근을 정교히 다듬어가는 시각 예술가 및 창작자의 이야기를 듣거나 이들의 작품을 다루고자 한다.
-
-
-그렇다면 이 연구가 의식하는 동시대의 환경은 어떠한가? 오늘날에는 한 개인이 뷰티 및 패션 산업을 단순히 거부하는 것이 불가능할 정도로 상품이 세분화된 취향을 겨냥한 이미지로 생활에  침투해 들어왔다. 또한 K-pop 의 진원지로서 유독 연예인이 아닌 일반 여성에게까지 높은  미적  기준이 적용되는 양상을 보이지만, 동시에 여성 연예인의 주체적인 선택이나 이미지 메이킹이 페미니즘적인 실천으로 독해 되는 일도 종종 있다. 더불어 고화질 카메라가 부착된 스마트폰의 상용화와 소셜 네트워크의 보편화가 불러온 이미지의 생산 및 유포의 새로운 메커니즘, 그리고 국내의  여성들을 분노하게 했던 각종 불법촬영 및 유포 범죄는 여성의  외모와  실천에  대한  논의가  보다  풍부한 동시대적 맥락 속에서 이루어져야 한다는 것을 방증한다. 이처럼 복잡다단한 맥락으로 인해 여성이 스스로를 표현하는 양식이나 이를 촬영하고 편집하여 업로드하는 일련의  과정은  단순히  스스로의 외모를 가꾸어 남성적 시선의 승인을 얻으려는 시도이거나 단지 자기 만족과 임파워먼트(empowerment)를 위한 것 중 어느 하나로 환원하기 어려운 것이다.
-
-
-이에 본 연구의 첫 번째 목표는 여성의 외모 꾸미기와 관련된 기존의 논의를 검토하고, 이를 바탕으로 동시대 우리나라의 시각문화 및 관련 사회 이슈를 연구하여 외모 꾸미기 미학을 맥락화하여 갱신하는 것이다. 나아가 본 연구는 여성의 이미지 및 정체성에 대한 탐구에 천착한 동시대 국내 시각 예술가 및 창작자의 실천을 분석하고자 한다. 현재 몇몇의 여성 작가들이 자신의 셀프 카메라 이미지, 여성 아이돌의 이미지가 소비되는 방식, 소셜 네트워크에 업로드된 여성의 이미지 등을 각기 다른 매체와 관점으로 다루고 있다. 본 연구는 이와 같은 일련의 작가들의 실천을 갑작스럽게  등장한  ‘새로운 감각’으로 주목하는 것이 아니라 보다 정확히 맥락화 하되 풍부하게 독해될 수 있는 여지를 열어두는 방식으로 접근하고자 한다.
+{: .caption}
+<br><br>\* <br>
+웹페이지 (N)YTN은 2018년 한국예술창작아카데미(시각예술)의 프로젝트 결과물로 제작되었으며, 2020년까지 인터뷰, 글, 이미지, 오프라인 스크리닝 및 행사 등으로 꾸려질 예정입니다. 의견 혹은 협업 제안은 <a href="mailto:yujiwon0424@gmail.com">yujiwon0424@gmail.com</a>으로 보내주시기 바랍니다. 
+<br><br>
+기획. 유지원<br>
+웹페이지 디자인 및 제작. <a href="http://sceneryoftoday.kr" target="_blank">오늘의풍경</a><br>
+후원. 한국문화예술위원회 한국예술창작아카데미<br>
+<br><br>\* <br>
+(N)YTN welcomes further discussion and joint initiatives. For inquiries or proposals for collaboration, contact Jiwon Yu (<a href="mailto:yujiwon0424@gmail.com">yujiwon0424@gmail.com</a>).  <br><br>
+Curated by Jiwon Yu<br>
+Webpage design by <a href="http://sceneryoftoday.kr" target="_blank">Scenery of Today</a><br>
+Sponsored by Arts Council Korea <br>

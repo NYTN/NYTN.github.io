@@ -70,7 +70,6 @@ blockquote {
 }
 
 .post-content sup a{
-    color: #000;
     margin-left: 2px;
     border-bottom: 0px #fff;
 }
@@ -140,7 +139,7 @@ span{
 
 /* backgroundframe */
 
-.frame{
+#frame{
     left: 0;
     top: 0;
     position: fixed;
@@ -150,6 +149,7 @@ span{
     background-size: 100vw 100vh;
     pointer-events: none;
     overflow: hidden;
+    z-index: 450;
 }
 
 .title{
@@ -170,7 +170,6 @@ span{
 }
 
 .logo-img{
-    
 }
 
 .sticker-btn-wrapper{
@@ -190,7 +189,7 @@ span{
     left: 30px;
     width: 160px;
     height: 40px;
-        z-index: 1500;
+    z-index: 1500;
     cursor:pointer;
     -webkit-filter: drop-shadow( 0px 0px 20px #9150c8 ); 
     filter: drop-shadow( 0px 0px 20px #9150c8 );
@@ -318,7 +317,6 @@ span{
 .post-list-text:hover{
     transform: translate(-0.25rem, -0.25rem);
 }
-
 
 
 .text-title{
@@ -523,21 +521,15 @@ span{
 .draggable{
     width: auto;
     height: auto;
-    z-index: 5000;
     display: block;
     pointer-events: auto;
-    width: auto;
-    height: auto;
-    min-width: 20px;
-    min-height: 20px;
-    max-height: 140px;
-    max-width: 140px;
     cursor: grab;
-    position: absolute;
+    z-index: 5000;
 }
 
 .draggable:active{
     cursor: grabbing;
+    z-index: 9999;
 }
 
 

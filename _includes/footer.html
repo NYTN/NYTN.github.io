@@ -8,9 +8,12 @@
 </footer>
 
  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
     
 <script>
   $(document).ready(function(e){
@@ -71,17 +74,22 @@
       image[43] = "https://media.giphy.com/media/4MWkXHBH73SeofR6dn/giphy.gif";
       
     $('#sticker-btn').click(function(){
-    $('.frame').append("<img class='random' />");
+    $('#frame').append("<img class='random' /></div>");
+    
     $('.random').each(function(i,el){
-        var tLeft = Math.floor(Math.random()*1180),
-            tTop  = Math.floor(Math.random()*700);
+        var wframe = $('#frame').width()-100;
+        var hframe = $('#frame').height()-100;
+        var tLeft = Math.floor(Math.random()*wframe),
+            tTop  = Math.floor(Math.random()*hframe);
         var size = image.length
         var x = Math.floor(size*Math.random())
-        $(this).attr('src', image[x]);  
-        $(el).css({position:'absolute', left: tLeft, top: tTop});
+        $(this).attr('src', image[x]);
+        var wimg = Math.floor((Math.random() * 200) + 50);
+        $(el).css({position:'absolute', left: tLeft, top: tTop, width:wimg, height:'auto'});
         $(this).attr('class', 'draggable');
-        $(".draggable").draggable();
+        $(".draggable").draggable({ containment: "parent" });
     });
+    
     
 
     
