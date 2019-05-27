@@ -77,8 +77,8 @@
     $('#frame').append("<img class='random' /></div>");
     
     $('.random').each(function(i,el){
-        var wframe = $('#frame').width()-100;
-        var hframe = $('#frame').height()-100;
+        var wframe = $('#frame').width()-200;
+        var hframe = $('#frame').height()-200;
         var tLeft = Math.floor(Math.random()*wframe),
             tTop  = Math.floor(Math.random()*hframe);
         var size = image.length
@@ -89,12 +89,7 @@
         $(this).attr('class', 'draggable');
         $(".draggable").draggable({ containment: "parent" });
     });
-    
-    
-
-    
-    });
-      
+    });  
     
 });
 </script>
