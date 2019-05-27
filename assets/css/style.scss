@@ -708,6 +708,80 @@ span{
 
 }
 
+@media screen and (orientation:portrait) {
+
+    .wrapper{
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+    
+    html{
+        font-size: 16px;
+    }
+    
+    .page-wrapper{
+        padding-top: 0vh;
+    }
+    
+    .post{
+        padding-top: 7rem;
+    }
+    
+    .conv_wrapper{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    #menu-list{
+        width: 75vw;
+    }
+    
+    .post-list img{
+        width: 80vw;
+        min-width:80%; 
+        max-width:100%;
+    }
+    .conv-title-img h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: calc(45vh - 2rem);
+    }
+    
+    .conv-post-content blockquote{
+        padding-right: 10vw;
+    }
+    .conv-post-content p{
+        padding-left: 10vw;
+    }
+    
+    .conv-post-content .caption{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    
+    .post-text{
+        padding-top: 6rem;
+    }
+    
+    .caption{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .title{
+        top: -30px;
+        width: 100%;
+        left: calc(50% - 50%);
+    }
+    
+    .title-bottom{
+        bottom: -60px;
+        width: 100%;
+        left: calc(50% - 50%);
+    }
+
+}
+
 @media screen and (min-width: 980px) {
     /*html{font-size: 20px;}
     .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
