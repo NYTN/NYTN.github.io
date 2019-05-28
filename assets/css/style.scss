@@ -302,6 +302,11 @@ span{
   min-height: 100%;
 }
 
+video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .page-content{
     z-index: -10;
 }
