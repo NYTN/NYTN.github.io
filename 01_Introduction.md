@@ -21,3 +21,9 @@ categories: [menu]
 Curated by Jiwon Yu<br>
 Webpage design by <a href="http://sceneryoftoday.kr" target="_blank">Scenery of Today</a><br>
 Sponsored by Arts Council Korea <br>
+
+{: .caption}
+<br><br>\* <br>
+Thank you to the sponsors... 
+<br><br>
+강지원 고안철 김은지 김지원 김화현 남디 남화연 박정우 박현정 서민주 선희라 이기원 이다원 이문석 이솜이 오승현 이윤서 이은지 이진실 이현송 임지현 전가경 조아라 진세영 최영 한솔 홍기하 황수연 황혜준 <br>
