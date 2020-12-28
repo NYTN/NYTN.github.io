@@ -27,10 +27,10 @@ a:hover, a:active { text-decoration: none; }
 
 hr{
     height: 1px;
-    color: #00FF00;
-    margin-top: 5rem;
+    color: #0000ff;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #00FF00;
+    background-color: #0000ff;
 }
 
 .post-content{
@@ -189,7 +189,7 @@ span{
     outline-offset: -1px;
 }
 
-.about{
+#about{
     position: fixed;
     top: 0.25rem;
     left: 0rem;
@@ -198,6 +198,11 @@ span{
     text-align: center;
     overflow: hidden;
 }
+
+#about:hover{
+    cursor: pointer;
+}
+
 
 .about-bg{
     position: absolute;
@@ -214,54 +219,57 @@ span{
     height: 4rem;
     vertical-align: middle;
     z-index: 100 !important;
-    padding: 1rem;
+    padding: 1.25rem;
+    text-align: center;
 }
 
 .about-txt img{
-    height: 1.5rem;
+    height: 1.25rem;
     width: auto;
     z-index: 100 !important;
 }
 
-.about:hover {
-    cursor: pointer;
-}
 
-.about-full{
+#about-full{
     overflow: hidden;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
+    width: calc(100% - 1rem);
+    height: calc(100% - 2rem);
+    top: 1rem;
+    left: .5rem;
     overflow-y: scroll;
+    display: none;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
 }
 
 .about-full-txt {
     color: blue;
-    top: 65vh;
-    padding: 1rem;
+    top: 60vh;
     position: relative;
-    width: 50vw;
-    line-height: 1.5rem;
+    width: 70vw;
     word-break: keep-all;
     left: 2rem;
     margin: 0;
     float: left;
+}
 
+.about-full-txt p{
+    margin-bottom: 1rem;
 }
 
 .about-full-credit {
     color: blue;
-    top: 65vh;
-    padding: 1rem;
+    top: 60vh;
     position: relative;
-    width: 25vw;
-    line-height: 1.5rem;
+    width: 20vw;
     word-break: keep-all;
     left: 3vw;
     margin: 0;
     float: left;
+}
+.about-full-credit p{
+    margin-bottom: 1rem;
 }
 
 .about-full-bg {
@@ -270,6 +278,27 @@ span{
     height: calc(100% - 2rem);
     left: 1rem;
     top: 1rem;
+}
+
+.about-full-title{
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 2.5rem;
+    background-size: 95vw auto;
+    text-align: center;
+}
+
+.about-full-title img{
+    max-width: 95vw;
+    width: 95vw;
+    height: auto;
+    max-height: 57.5vh;
+    position:relative;
+    top: 3rem;
 }
 
 #title-main {}
@@ -284,18 +313,19 @@ span{
     top:0;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: 90vw auto;
+    background-size: 100vw auto;
     background-position: center top;
     float: left;
     list-style: none;
+    text-align: center;
 }
 
 .scroller li{
     height: 100vh !important;
     width: 100vw !important;
     background-repeat: no-repeat;
-    background-size: 90vw auto;
-    background-position: center top;
+    background-size: 100vw auto;
+    background-position: center 1.5rem;
     float: left;
     list-style: none;
 }
@@ -362,6 +392,63 @@ div.link-box div + div {
     background-size: auto 40%;
     margin: 0 !important;
 }
+
+#close-left{
+    position: fixed;
+    left: 2.25rem;
+    top: 1.75rem;
+    height: 5rem;
+    width: 5rem;
+    background: url('/assets/SVG/arrow-left.svg') no-repeat left center ;
+    z-index: 9999;
+}
+
+#close-left:hover{
+    cursor: pointer;
+}
+
+
+#close-right{
+    position: fixed;
+    right: 2.25rem;
+    top: 1.75rem;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow.svg') no-repeat right center ;
+}
+
+#close-right:hover{
+    cursor: pointer;
+}
+
+#close-b-left{
+    position: fixed;
+    left: 2.25rem;
+    bottom: 1.75rem;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow-b-left.svg') no-repeat left center ;
+}
+
+#close-b-left:hover{
+    cursor: pointer;
+}
+
+#close-b-right{
+    position: fixed;
+    right: 2rem;
+    bottom: 1.75rem;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow-b.svg') no-repeat right center ;
+}
+#close-b-right:hover{
+    cursor: pointer;
+}
+
 
 /* main div */
 
