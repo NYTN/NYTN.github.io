@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'slack';
+    src: url('/assets/f/Slack-Light.woff2') format('woff2'),
+         url('/assets/f/Slack-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerif';
+    src: url('/assets/f/NotoSerifKR-Light.woff2') format('woff2'),
+         url('/assets/f/NotoSerifKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.NotoSerif * {
+ font-family: 'NotoSerif', serif;
+}
+
+span.ml-ko {
+    font-family: 'NotoSerif', serif;
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: -1px;
+    /*below two lines are for baseline shift */
+    position:relative;
+    top: -0.01rem;
+}
+
+
+.ml-parentheses {
+  /* specific style for parentheses */
+  /* shifting baseline */
+  position:relative;
+  top: 2rem;
+}

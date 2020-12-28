@@ -1,0 +1,29 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="wrapper">
+    
+</div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+    
+<script>
+  $(document).ready(function(e){
+    $("p, li, h1, h2").multilingual(["ko"]);
+    $("p").has("img").css({padding: 0});
+    $("p").has("img").css({textAlign: "center"});
+  });
+</script>
+    
+<script type="text/javascript">
+  $(document).ready(function() { 
+      
+    $("#title-main").scrollForever({speed: 500, delaytime: 30});
+    $("#title-main-sub").scrollForever({speed: 2000});
+      
+});</script>
