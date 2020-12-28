@@ -1,0 +1,18 @@
+---
+layout: default-GIQ
+---
+
+<div class="page-wrapper">
+    {% for post in site.categories.Conversation %}
+    <a href="{{ post.url }}">
+        <div class="post-list">
+            <img src="/img/{{ post.folder }}/thumbnail_hover.png" onmouseover="this.src='/img/{{ post.folder }}/thumbnail.png'" onmouseout="this.src='/img/{{ post.folder }}/thumbnail_hover.png'">
+            <div>{{ post.artist-ko }}<br>{{ post.artist-en }}</div>
+        </div>
+        
+    </a>
+    
+    {% endfor %}
+</div>
+
+

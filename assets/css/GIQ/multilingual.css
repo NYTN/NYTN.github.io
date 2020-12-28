@@ -21,9 +21,10 @@
 
 span.ml-ko {
     font-family: 'NotoSerif', serif;
-    font-size: 105%;
+    font-size: 101%;
     font-weight: 300;
-    letter-spacing: 0;
+    letter-spacing: 0.25px;
+    word-spacing: 0.5px;
     /*below two lines are for baseline shift */
     position:relative;
     top: -0.01rem;
