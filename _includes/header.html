@@ -11,8 +11,10 @@
         <ul>
          {% for page in site.pages %}
             {% if page.title %}
+            {% unless page.exclude %}
         <a href="{{ page.url | prepend: site.baseurl }}"><li>{{ page.menu-title }}</li></a>
-                {% endif %}
+               {% endunless %}
+            {% endif %}
      {% endfor %}
         </ul>
     </div>
