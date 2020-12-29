@@ -75,6 +75,44 @@ hr{
     word-break: keep-all;
 }
 
+.GIQ-1{
+    width: calc(100% - 15vw);
+    padding: 3.75vw;
+}
+
+.GIQ-1 p{
+
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 2.5rem !important;
+    padding-left: 0;
+
+}
+
+.GIQ-1 p .ml-ko{
+    border-bottom: 1px #00FF00 solid;
+    padding-bottom: 4px;
+}
+
+
+.GIQ-1 p .ml-punct{
+    border-bottom: 1px #00FF00 solid;
+    padding-bottom: 8px;
+}
+
+.GIQ-1 p .ml-en{
+    border-bottom: 1px #00FF00 solid;
+    padding-bottom: 8px;
+}
+
+.GIQ-1 p .ml-parentheses{
+    border-bottom: 1px #00FF00 solid;
+    padding-bottom: 8px;
+}
+
+
+
 .post-content hr{
     color: #00ff00 !important;
     background-color: #00ff00 !important;
@@ -160,7 +198,7 @@ body{
 }
 
 .caption{
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     padding-left: 5rem;
     padding-right: 5rem;
     text-align: left;
@@ -207,6 +245,13 @@ span{
     height: calc(100vh - 5vw);
     overflow: hidden;
 }
+
+.wrapper_GIQ {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 
 .wrapper-text{
 
@@ -496,6 +541,7 @@ div.link-box div + div {
     line-height: 1.2rem !important;
     border-top: 1px #00ff00 solid;
     padding-top: 1.25vw !important;
+    border-bottom: none !important;
 }
 
 .numbering {
@@ -518,12 +564,14 @@ div.link-box div + div {
     margin-bottom: 2.5vw !important;
     border-top: 1px #00ff00 solid;
     padding-top: 1.25vw !important;
+    border-bottom: none !important;
 }
 
 #close-left-g {
     position: fixed;
-    left: 5vw;
-    top: 5vw;
+    left: 0;
+    top: 0;
+    margin: 5vw;
     height: 5rem;
     width: 5rem;
     background: url('/assets/SVG/arrow-left-g.svg') no-repeat left center ;
@@ -534,8 +582,9 @@ div.link-box div + div {
 }
 #close-right-g{
     position: fixed;
-    right: 5vw;
-    top: 5vw;
+    right: 0;
+    top: 0;
+    margin: 5vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
@@ -546,8 +595,9 @@ div.link-box div + div {
 }
 #close-b-left-g{
     position: fixed;
-    left: 5vw;
-    bottom: 5vw;
+    left: 0;
+    bottom: 0;
+    margin: 5vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
@@ -558,8 +608,9 @@ div.link-box div + div {
 }
 #close-b-right-g{
     position: fixed;
-    right: 5vw;
-    bottom: 5vw;
+   right: 0;
+    bottom: 0;
+    margin: 5vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
@@ -569,6 +620,81 @@ div.link-box div + div {
     cursor: pointer;
 }
 
+.p-arrow {
+    margin: 3vw !important;
+}
+
+
+/* Projects */
+
+.GIQ-post-list{
+    display: block;
+    position: absolute; 
+    overflow: hidden;
+ 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes GIQ-1 { 
+    from {
+    transform: rotate(-0.001deg) translate3d(1px, 0, 0) rotate(-0.001deg);}
+    to {transform: rotate(-360.001deg) translate3d(1px, 0, 0) rotate(360.001deg);}   
+} 
+
+@keyframes GIQ-2 { 
+    from {
+    transform: rotate(0.001deg) translate3d(2px, 0, 0) rotate(0.001deg);}
+    to {transform: rotate(360.001deg) translate3d(2px, 0, 0) rotate(-360.001deg);}   
+} 
+
+@keyframes GIQ-3 { 
+    from {
+    transform: rotate(-0.001deg) translate3d(4px, 0, 0) rotate(-0.001deg);}
+    to {transform: rotate(360.001deg) translate3d(4px, 0, 0) rotate(-360.001deg);}   
+} 
+
+@keyframes GIQ-4 { 
+    from {
+    transform: rotate(-0.001deg) translate3d(3px, 0, 0) rotate(-0.001deg);}
+    to {transform: rotate(-360.001deg) translate3d(3px, 0, 0) rotate(360.001deg);}   
+} 
+
+@keyframes GIQ-5 { 
+    from {
+    transform: rotate(-0.001deg) translate3d(2px, 0, 0) rotate(-0.001deg);}
+    to {transform: rotate(360.001deg) translate3d(2px, 0, 0) rotate(-360.001deg);}   
+} 
+
+@keyframes GIQ-6 { 
+    from {
+    transform: rotate(0.001deg) translate3d(3px, 0, 0) rotate(0.001deg);}
+    to {transform: rotate(360.001deg) translate3d(3px, 0, 0) rotate(-360.001deg);}   
+} 
+
+.GIQ-post-list:hover{
+    cursor: pointer;
+}
+
+.p-arrow{
+    padding: 3vw;
+}
+
+.GIQ-caption {
+    margin-top: -1.5rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.GIQ-caption span{
+    border-bottom: none !important;
+}
+
+.artist-name span{
+    border-bottom: none !important;
+}
+
+.artist-description span{
+    border-bottom: none !important;
+}
 
 /* main div */
 

@@ -108,7 +108,7 @@ categories: [menu]
 
 {:.artist-name}
 박지원 
-<br>[fishfish1224@gmail.com](mailto:fishfish1224@gmail.com){:target="_blank"}
+<br>[fishfish1224@gmail.com ↗](mailto:fishfish1224@gmail.com){:target="_blank"}
 
 {:.artist-description}
 시간이 존재하는 드로잉에서의 요소들에 주목한다. 텍스트나 상황, 때론 공간 그 자체가 의인화되어 칸 만화의 매체를 비유한다. 이들은 드로잉 안에서 상호작용하며 서로의 역할을 재편집한다. 평면드로잉에서 나아간 영상은 캐릭터가 된 요소를 포함한다. 이 이미지들은 화면상에서 만들어지는 도중의 상태이며 계속 변화한다.

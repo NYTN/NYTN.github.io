@@ -16,30 +16,29 @@
 
 
 @font-face {
-    font-family: 'NanumGiBbeumBarkEum';
-    src: url('NanumGiBbeumBarkEum.woff2') format('woff2'),
-        url('NanumGiBbeumBarkEum.woff') format('woff');
+    font-family: 'Nanum';
+    src: url('/assets/f/Nanum.woff2') format('woff2'),
+        url('/assets/f/Nanum.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 
 
 
-.NotoSerif * {
- font-family: 'NotoSerif', serif;
+.Nanum * {
+ font-family: 'Nanum', serif;
 }
 
 span.ml-ko {
-    font-family: 'NotoSerif', serif;
-    font-size: 101%;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-    word-spacing: 0.5px;
+    font-family: 'Nanum', serif;
+    font-size: 170%;
+    font-weight: 100;
+    letter-spacing: -0.1px;
+    word-spacing: 5px;
     /*below two lines are for baseline shift */
     position:relative;
-    top: -0.01rem;
+    top: 0;
 }
 
 
@@ -48,5 +47,5 @@ span.ml-ko {
   /* shifting baseline */
   position:relative;
 font-size: 103%;
-  top: -0.05rem;
+  top: 0;
 }

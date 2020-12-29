@@ -15,12 +15,13 @@
 <script>
   $(document).ready(function(e){
     $("p, li, h1, h2").multilingual(["ko"]);
+    $("p, li, h1, h2").multilingual(["en"]);
     $("p").has("img").css({padding: 0});
     $("p").has("img").css({textAlign: "center"});
     $("p").multilingual([
       "punct", {
         className: "ml-parentheses", /* Class name can be anything */
-        charset: '()⟨⟩⟪⟫' /*  characters to be selected, within '' */
+        charset: '()⟨⟩⟪⟫“”,.1234567890' /*  characters to be selected, within '' */
       }
     ]);
   });

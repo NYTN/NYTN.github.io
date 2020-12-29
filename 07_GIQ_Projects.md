@@ -1,7 +1,5 @@
 ---
-layout: GIQ-Projects
-menu-title: Girls in Quarantine Projects
-title: Girls in Quarantine Projects
+layout: projects
 permalink: /GIQ/Projects
 exclude: true
 categories: [menu]
