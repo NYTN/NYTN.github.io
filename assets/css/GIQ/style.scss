@@ -9,11 +9,35 @@
     border: 0;
 }
 
+.vimeo{
+    position: relative;
+    display: block;
+    max-width: 100vw;
+    padding-bottom: 56.25%;;
+    overflow: hidden;
+    height: 0;
+    margin-top: 1.25vw;
+}
+
+.vimeo iframe,
+.vimeo embed,
+.vimeo object{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 html{
     font-size: 20px;
 }
 
 p {hyphens: none;}
+
+body {
+    overflow:hidden;}
 
 a {
     text-decoration: none;
@@ -28,27 +52,51 @@ a:hover, a:active { text-decoration: none; }
 hr{
     height: 1px;
     color: #0000ff;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.25vw;
+    margin-bottom: 1.25vw;
     background-color: #0000ff;
 }
 
 .post-content{
+    width: calc(100% - 7.5vw);
+    height: auto;
+    position: relative;
+    left: 3.75vw;
     text-align: left;
 }
 
 .post-content p{
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     text-align: left;
     hyphens: none;
     color: blue;
     margin-bottom: 1.25rem;
+    padding-left: 20vw;
+    word-break: keep-all;
+}
+
+.post-content hr{
+    color: #00ff00 !important;
+    background-color: #00ff00 !important;
+    width: 100%;
+    position: relative;
+    margin-top: 3.75vw !important;
+}
+
+.post-content a:hover{
+    padding-bottom: 1px;
+    border-bottom: 1px #00ff00 solid;
+    
 }
 
 .post-content .caption{
-    line-height: 1.25rem !important;
+    text-align: center;
+    padding: 0.3rem 0 0 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.22rem !important;
     
 }
+
 .post-content li{
     color: blue;
     text-align: left;
@@ -89,10 +137,6 @@ blockquote {
     overflow: hidden;
 }
 
-.post-content a{
-    padding-bottom: 1px;
-    border-bottom: 1px blue dotted;
-}
 
 h1 {
     text-align: center;
@@ -138,19 +182,6 @@ span{
     
 }
 
-/*
-.G-blur{
-    background-color: #00FF00;
-    filter:blur(8px);
-    -webkit-filter: blur(8px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
-    border-radius: 20px;
-    z-index: 0 !important;
-} */
-
 .G-blur{
     background-color: #00FF00;
     box-shadow: 0px 0px 0.5rem 0.5rem rgba(0, 255, 0, 1);
@@ -166,28 +197,20 @@ span{
     box-shadow: inset 0px 0px .5rem rgba(0, 0, 0, .5);
     outline: 1px solid #00ff00;
     outline-offset: -1px;
+    border-radius: 0 !important;
 }
 
 /* backgroundframe */
 
-.title{
-
-}
-
-.logo-img{
-}
-
-
 .wrapper{
-    padding-left: 25vw;
-    padding-right: 25vw;
+    margin: 2.5vw;
+    height: calc(100vh - 5vw);
+    overflow: hidden;
 }
 
 .wrapper-text{
-    padding-left: 20vw;
-    padding-right: 33.33vw;
-}
 
+}
 
 /* GIQ.html elements */
 
@@ -323,13 +346,13 @@ span{
 
 .scroller{
     width:100vw;
-    height:95vh;
+    height:100vh;
     overflow:hidden;
     top: 5vh;
     left:0;
     top:0;
     position: absolute;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100vw auto;
     background-position: center top;
     float: left;
@@ -338,9 +361,9 @@ span{
 }
 
 .scroller li{
-    height: 100vh !important;
-    width: 100vw !important;
-    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: repeat-y;
     background-size: 100vw auto;
     background-position: center 1.5rem;
     float: left;
@@ -412,57 +435,137 @@ div.link-box div + div {
 
 #close-left{
     position: fixed;
-    left: 2.25rem;
-    top: 1.75rem;
+    left: 4vw;
+    top: 4vw;
     height: 5rem;
     width: 5rem;
     background: url('/assets/SVG/arrow-left.svg') no-repeat left center ;
     z-index: 9999;
 }
-
 #close-left:hover{
     cursor: pointer;
 }
-
-
 #close-right{
     position: fixed;
-    right: 2.25rem;
-    top: 1.75rem;
+    right: 4vw;
+    top: 4vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
     background: url('/assets/SVG/arrow.svg') no-repeat right center ;
 }
-
 #close-right:hover{
     cursor: pointer;
 }
-
 #close-b-left{
     position: fixed;
-    left: 2.25rem;
-    bottom: 1.75rem;
+    left: 4vw;
+    bottom: 4vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
     background: url('/assets/SVG/arrow-b-left.svg') no-repeat left center ;
 }
-
 #close-b-left:hover{
     cursor: pointer;
 }
-
 #close-b-right{
     position: fixed;
-    right: 2rem;
-    bottom: 1.75rem;
+    right: 4vw;
+    bottom: 4vw;
     height: 5rem;
     width: 5rem;
     z-index: 9999;
     background: url('/assets/SVG/arrow-b.svg') no-repeat right center ;
 }
 #close-b-right:hover{
+    cursor: pointer;
+}
+
+
+/* Screening */
+
+.artist-name {
+    float: left;
+    position: relative;
+    width: 17.5vw;
+    margin-right: 2.5vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 0.8rem;
+    line-height: 1.2rem !important;
+    border-top: 1px #00ff00 solid;
+    padding-top: 1.25vw !important;
+}
+
+.numbering {
+    float: left;
+    position: relative;
+    width: 17.5vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    left: 0vw;
+}
+
+.artist-description{
+    float: left;
+    position: relative;
+    width: calc(100% - 20vw);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 0.8rem;
+    line-height: 1.2rem !important;
+    margin-bottom: 2.5vw !important;
+    border-top: 1px #00ff00 solid;
+    padding-top: 1.25vw !important;
+}
+
+#close-left-g {
+    position: fixed;
+    left: 5vw;
+    top: 5vw;
+    height: 5rem;
+    width: 5rem;
+    background: url('/assets/SVG/arrow-left-g.svg') no-repeat left center ;
+    z-index: 9999;
+}
+#close-left-g:hover{
+    cursor: pointer;
+}
+#close-right-g{
+    position: fixed;
+    right: 5vw;
+    top: 5vw;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow-g.svg') no-repeat right center ;
+}
+#close-right-g:hover{
+    cursor: pointer;
+}
+#close-b-left-g{
+    position: fixed;
+    left: 5vw;
+    bottom: 5vw;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow-b-left-g.svg') no-repeat left center ;
+}
+#close-b-left-g:hover{
+    cursor: pointer;
+}
+#close-b-right-g{
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    height: 5rem;
+    width: 5rem;
+    z-index: 9999;
+    background: url('/assets/SVG/arrow-b-g.svg') no-repeat right center ;
+}
+#close-b-right-g:hover{
     cursor: pointer;
 }
 
@@ -542,8 +645,8 @@ video {
 }
 
 .post{
-    padding-top: 10.5rem;
-    padding-bottom: 12.5vw;
+    height: 100%;
+    overflow: auto;
 }
 
 .post-text{
@@ -660,7 +763,7 @@ video {
 }
 
 .post-header{
-    margin-bottom: 2.5rem;
+
 }
 
 .post-header-conv{
@@ -771,6 +874,8 @@ video {
     and (min-device-width: 320px)
     and (max-device-width: 736px)
     and (orientation:landscape) {
+   
+        /*
     .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
@@ -843,17 +948,17 @@ video {
         bottom: -90px;
         width: 75%;
         left: calc(50% - 37.5%);
-    }
+    } */
 
 }
 
 
 @media only screen
     and (min-device-width: 320px)
-    and (max-device-width: 736px) 
+    and (max-device-width: 1024px) 
     and (orientation:portrait) {
 
-    .wrapper{
+    /* .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
     }
@@ -928,12 +1033,14 @@ video {
         bottom: -60px;
         width: 100%;
         left: calc(50% - 50%);
-    }
+    } */
  
-
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
+    
+   
+    
     /*html{font-size: 20px;}
     .wrapper{padding-left: 17.5vw; padding-right: 17.5vw;}
     .post-text{padding-top: 10rem;}

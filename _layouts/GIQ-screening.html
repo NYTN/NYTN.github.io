@@ -2,27 +2,25 @@
 layout: default-GIQ
 ---
 
-<div class="wrapper">
+<div class="wrapper G-blur">
 
-
+<div class="wrapper G-innershadow" style="margin: 0vw;">
 <article class="post h-entry" itemscope temtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="caption">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%Y.%m.%-d" -%}{{ page.date | date: date_format }}
-      </time> <br>
-      {{ page.at | escape }}<br>
-        {{ page.who | escape }}
-      </p>
-  </header>
+  <div class="post-header" style="text-align: center; padding-top: 1.5vw;">
+   <img src="/assets/SVG/Screening-header.svg" style="max-width: 70vw; min-width: 500px; ">
+  </div>
 
   <div class="post-content e-content" id="lorem" itemprop="articleBody">
     {{ content }}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    
+     <div id="close-left-g" onclick="location.href='../GIQ'"> </div>
+    <div id="close-right-g" onclick="location.href='../GIQ'"> </div>
+    <div id="close-b-left-g" onclick="location.href='../GIQ'"> </div>
+    <div id="close-b-right-g" onclick="location.href='../GIQ'"> </div>
 </article>
-
+</div>
 </div>

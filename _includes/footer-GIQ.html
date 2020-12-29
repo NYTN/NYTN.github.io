@@ -17,9 +17,16 @@
     $("p, li, h1, h2").multilingual(["ko"]);
     $("p").has("img").css({padding: 0});
     $("p").has("img").css({textAlign: "center"});
+    $("p").multilingual([
+      "punct", {
+        className: "ml-parentheses", /* Class name can be anything */
+        charset: '()⟨⟩⟪⟫' /*  characters to be selected, within '' */
+      }
+    ]);
   });
 </script>
     
+
 <script type="text/javascript">
   $(document).ready(function() { 
       
@@ -46,5 +53,7 @@
   $("#about").click(function() {
     $("#about-full").css("display", "block");
   });
+      
+      
       
 });</script>
