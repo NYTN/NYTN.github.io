@@ -1011,6 +1011,19 @@ video {
     and (orientation:landscape) {
    
         html{font-size: 16px;}
+        hr{ margin-bottom: 1.4vw !important; }
+        
+        .ml-parentheses{padding-bottom: 7px !important;}
+        .ml-en{padding-bottom: 7px !important;}
+        .ml-punct{padding-bottom: 7px !important;}
+        .numbering, .artist-name, .about-full-credit, .about-full-txt, .artist-description{width:100%; line-height: 1.4rem !important;  padding-top: 1.4vw !important;}
+        
+        .post-content p { padding-left:0; width:100%;}
+        .caption { font-size: 0.7rem !important; }
+        
+        #close-left-g, #close-right-g, #close-b-left-g, #close-b-right-g, #close-left, #close-right, #close-b-left, #close-b-right  {height: 4rem; width: 4rem;}
+        .about-full-credit, .about-full-txt {top:60vw; width: calc(95vw - 4rem); left:2rem; padding-bottom: 20vh; }
+        .about-full-credit {text-align: center; left:2rem;}
         
         /*
     .wrapper{
@@ -1107,6 +1120,7 @@ video {
         #close-left-g, #close-right-g, #close-b-left-g, #close-b-right-g, #close-left, #close-right, #close-b-left, #close-b-right  {height: 4rem; width: 4rem;}
         .about-full-credit, .about-full-txt {top:60vw; width: calc(95vw - 4rem); left:2rem; padding-bottom: 20vh; }
         .about-full-credit {text-align: center; left:2rem;}
+        
     /* .wrapper{
         padding-left: 12.5vw;
         padding-right: 12.5vw;
