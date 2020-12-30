@@ -99,12 +99,55 @@ hr{
 
 }
 
-.GIQ-2 p{
+.GIQ-2, .GIQ-3 p{
 
    padding-left:0;
 
 }
 
+
+.GIQ-3 {
+    width: calc(100% - 10vw);
+    height: calc(100% - 15vw);
+    left: 5vw;
+    top: 5vw;
+}
+
+.GIQ-3 hr{
+    color: #0000ff !important;
+    background-color: #0000ff !important;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+#containment-wrapper{
+    width: calc(35433px + 17716.5px - 2.5vw);
+    height: calc(35433px + 17716.5px - 2.5vw);
+    display: block;
+    position: relative;
+    left: -17716.5px;
+    top: -17716.5px;
+    overflow: auto;
+}
+
+#GIQ-3-img-wrapper{
+    width: 35433px;
+    height: 35422px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor:grab;
+    overflow: auto;
+}
+
+.GIQ-3-img{
+    width: 3937px;
+    height: 3937px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
 
 .GIQ-1 p .ml-ko{
     border-bottom: 1px #00FF00 solid;
@@ -563,7 +606,7 @@ div.link-box div + div {
 
 #close-b-right, #close-b-right-g{ right: 0; bottom: 0; }
 
-.p-arrow { margin: 3vw !important; }
+.p-arrow { margin: 3vw !important;  }
 
 
 /* Projects */
@@ -616,9 +659,6 @@ div.link-box div + div {
     cursor: pointer;
 }
 
-.p-arrow{
-    padding: 3vw;
-}
 
 .GIQ-caption {
     margin-top: -1.5rem !important;

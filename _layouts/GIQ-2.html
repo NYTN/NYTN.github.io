@@ -7,19 +7,35 @@ layout: default-GIQ
 <article class="post h-entry" itemscope temtype="http://schema.org/BlogPosting" style="padding: 2.5vw;">
 
 
-<iframe src="/img/GIQ-2/sex_com.ogg" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe>
-    <div style="text-align: center;">
-<audio autoplay controls loop id="playAudio">
-    <source src="/img/GIQ-2/sex_com.mp3" type="audio/mp3">
-    <source src="/img/GIQ-2/sex_com.ogg" type="audio/ogg"> 
-</audio></div>
-    
+
+            
   <header class="post-header">
         <img src="/img/GIQ-2/thumbnail-2.svg">
   </header>
 
-  <div class="post-content GIQ-2 e-content" id="lorem" itemprop="articleBody">
+<div class="post-content GIQ-2 e-content" id="lorem" itemprop="articleBody">
+    <iframe src="/img/GIQ-2/sex_com.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
+<audio autoplay controls loop id="playAudio">
+    <source src="/img/GIQ-2/sex_com.mp3" type="audio/mp3">
+</audio>
+    
+        <script type="text/javascript">
+
+var soundHandle = document.getElementById('playAudio');
+soundHandle.volume = 0.2;
+
+$(document).ready(function() {
+        addEventListener('touchstart', function (e) {
+        soundHandle.src = '/img/GIQ-2/sex_com.mp3';
+        soundHandle.loop = true;
+        soundHandle.play();
+        soundHandle.pause();
+    });
+});
+
+</script>
+    
     {{ content }}
   </div>
 
