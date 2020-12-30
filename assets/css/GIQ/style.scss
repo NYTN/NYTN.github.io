@@ -92,19 +92,20 @@ hr{
 
 }
 
-.GIQ-2{
+.GIQ-2, .GIQ-4{
 
     width:100%;
     left:0;
 
 }
 
-.GIQ-2, .GIQ-3 p{
-
+.GIQ-2, .GIQ-3, .GIQ-4 p{
    padding-left:0;
-
 }
 
+.GIQ-4 p{
+    text-align: center;
+}
 
 .GIQ-3 {
     width: calc(100% - 10vw);
@@ -118,6 +119,10 @@ hr{
     background-color: #0000ff !important;
     margin-top: 10vw;
     margin-bottom: 10vw;
+}
+
+.GIQ-4-right{
+    text-align: right !important;
 }
 #containment-wrapper{
     width: calc(35433px + 17716.5px - 2.5vw);
