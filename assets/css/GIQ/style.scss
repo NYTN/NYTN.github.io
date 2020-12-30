@@ -99,6 +99,7 @@ hr{
 
 }
 
+.italics{font-style:italic;}
 .GIQ-2, .GIQ-3, .GIQ-4, .GIQ-5 p{
    padding-left:0;
 }
@@ -557,6 +558,7 @@ div.link-box div + div {
     border-top: 1px #00ff00 solid;
     padding-top: 1.25vw !important;
     border-bottom: none !important;
+    word-break: break-all;
 }
 
 .numbering {
