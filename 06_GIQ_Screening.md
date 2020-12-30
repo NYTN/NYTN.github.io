@@ -57,10 +57,14 @@ categories: [menu]
 
 <p></p>
 -	-	-	-	-	-	-	-	-	-	-
-<div class="vimeo"><iframe title="vimeo-player" src="https://vimeo.com/487243606/949dbb7d9f?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/495485967?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+
 
 {:.caption .G-blur}
-장서영, ⟨LDR-ASG⟩, 2020, 8분 13초, 싱글 채널 비디오 \* 13인치 이상 모니터 전체화면 모드에서 최적의 감상을 하실 수 있습니다.
+장서영, ⟨LDR-ASG⟩, 2020, 8분 13초, 싱글 채널 비디오
+
+{:.caption}
+<br> \*  <br> 13인치 이상 모니터 전체화면 모드에서 최적의 감상을 하실 수 있습니다.
 
 
 <br>
