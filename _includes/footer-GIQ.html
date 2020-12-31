@@ -15,6 +15,7 @@
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
 <script>
   $(document).ready(function(e){
@@ -37,7 +38,8 @@
   $(document).ready(function() { 
       
       
-    
+    $(".lazyload").lazyload();
+
       
     $('#containment-wrapper').each(function(i,el){
         var wframe = $(window).width();

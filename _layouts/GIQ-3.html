@@ -22,7 +22,7 @@ layout: default-GIQ
 {% for image in site.static_files %}
     {% if variable < 82 %} 
         {% if image.path contains 'img/GIQ-3/' %}
-            <div class="GIQ-3-img" style="background-image: url('{{ site.baseurl }}{{ image.path }}')"></div>
+            <div class="GIQ-3-img lazyload" style="background-image: url('/img/GIQ-blur/{{ variable }}.webp')" data-src="{{ site.baseurl }}{{ image.path }}"></div>
             {% assign variable = variable | plus:1 %}    
         {% endif %}
     {% endif %}
