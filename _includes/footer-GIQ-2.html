@@ -149,9 +149,19 @@ $("#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slid
 $("#GIQ-btn-2").mouseover(function(){ 
      $("#service").css("display", "block");});
       
-$("#GIQ-btn-2").mouseout(function(){     
+$("#GIQ-btn-2").click(function(){ 
+    if($("#service").css("display") == "block"){
+$("#service").css("display", "none");
+}else{
+$("#service").css("display", "block");
+}
+     });
+      
+       $("#service").mouseout(function(){     
      $("#service").css("display", "none");});
 
+
+      
       var audio = $("#logoAudio")[0];
        $("#logo-img").mouseenter(function(){     
     audio.play();});
@@ -165,16 +175,7 @@ $("#GIQ-btn-2").mouseout(function(){
         audio2.volume = 0.2;});
       
       
-$("#service").mouseover(function(){ 
-    if($("#service").css("display") == "block"){
-$("#service").css("display", "block");
-}else{
-$("#service").css("display", "none");
-}
-     });
-      
-       $("#service").mouseout(function(){     
-     $("#service").css("display", "none");});
+
       
   $("#about").click(function() {
     $("#about-full").css("display", "block");
@@ -189,6 +190,7 @@ $("#service").css("display", "none");
 
 <script type="text/javascript">
 
+    
 function onloadFunction() {
   var amount = X; //The amount of loops
   var arrayIDs = ["GIQ-btn-1", "GIQ-btn-2", "GIQ-btn-3" , "GIQ-btn-4"];    //all the IDs of the images
