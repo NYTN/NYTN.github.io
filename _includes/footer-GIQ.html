@@ -69,6 +69,25 @@
     $("#title-main").scrollForever({speed: 500, delaytime: 30});
     $("#title-main-sub").scrollForever({speed: 2000});
       
+     
+      
+      var isDragging = false;
+$("#about-full, #flounder")
+.mousedown(function() {
+    isDragging = false;
+})
+.mousemove(function() {
+    isDragging = true;
+ })
+.mouseup(function() {
+    var wasDragging = isDragging;
+    isDragging = false;
+    if (!wasDragging) {
+        $(this).css("display", "none");
+    }
+});
+
+      
       $("#close-left").click(function() {
     $("#about-full").css("display", "none");
   });
@@ -93,8 +112,7 @@
       
       $( "#draggable" ).draggable({ containment: "parent" });
 
-      
-        $("#flounder").click(function() {
-    $("#flounder").css("display", "none");
-  });});
+  
+  
+  });
 </script>

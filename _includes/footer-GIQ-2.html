@@ -23,7 +23,7 @@
     $("p, li, h1, h2").multilingual(["en"]);
     $("p").has("img").css({padding: 0});
     $("p").has("img").css({textAlign: "center"});
-      $(".draggable").draggable({ containment: "#containment-wrapper" });
+      $(".draggable").draggable({ containment: "document" });
     $("p").multilingual([
       "punct", {
         className: "ml-parentheses", /* Class name can be anything */
@@ -180,9 +180,26 @@ $("#service").css("display", "block");
   });
       
     $("#draggable").draggable({ containment: "window" });
-    $("#flounder").click(function() {
-    $("#flounder").css("display", "none");
-  });});
+      
+      
+      var isDragging = false;
+$("#about-full, #flounder")
+.mousedown(function() {
+    isDragging = false;
+})
+.mousemove(function() {
+    isDragging = true;
+ })
+.mouseup(function() {
+    var wasDragging = isDragging;
+    isDragging = false;
+    if (!wasDragging) {
+        $(this).css("display", "none");
+    }
+});
+
+  
+  });
     
 
     
