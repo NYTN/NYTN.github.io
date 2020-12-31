@@ -1,0 +1,258 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="wrapper">
+    
+</div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery-ui.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery-ui.min.js"></script>
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/slide-stories.js"></script>
+
+<script>
+  $(document).ready(function(e){
+    $("p, li, h1, h2").multilingual(["ko"]);
+    $("p, li, h1, h2").multilingual(["en"]);
+    $("p").has("img").css({padding: 0});
+    $("p").has("img").css({textAlign: "center"});
+      $(".draggable").draggable({ containment: "#containment-wrapper" });
+    $("p").multilingual([
+      "punct", {
+        className: "ml-parentheses", /* Class name can be anything */
+        charset: '()⟨⟩《》‹›«»“?℃”,.1234567890§― ' /*  characters to be selected, within '' */
+      }
+    ]);
+  });
+</script>
+    
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+      
+    $('.randoms').each(function(i,el){
+        var wframe = $('#random_items_wrapper').width()-200;
+        var hframe = $('#random_items_wrapper').height()-600;
+        var tLeft = Math.floor(Math.random()*wframe),
+            tTop  = Math.floor(Math.random()*hframe);
+        $(el).css({left: tLeft, top: tTop});
+    });
+      
+    $('.randoms_window').each(function(i,el){
+        var wframe = $('#window').offset().top;
+        var hframe = $('#window').height()-600;
+        var tRandom  = Math.floor(Math.random()*hframe);
+        var tTop  = tRandom + wframe;
+        $(el).css({top: tTop});
+    });
+      
+    $('.flare').each(function(i,el){
+        var wframe = $('#window').width();
+        var hframe = $('#window').height()-500;
+        var tLeft = Math.floor(Math.random()*wframe),
+            tTop  = Math.floor(Math.random()*hframe);
+        $(el).css({left: tLeft, top: tTop});
+    }); 
+      
+       $('.float').each(function(i,el){
+        var wframe = Math.floor(Math.random() * 801) - 100;
+        var hframe = Math.floor(Math.random() * 501) - 100;
+        var tLeft = Math.floor(Math.random()*wframe),
+            tTop  = Math.floor(Math.random()*hframe);
+        $(el).css({left: tLeft});
+    }); 
+      
+      $('#sky-2').each(function(i,el){
+        var hsky = $('#sky-1').height();
+        var hframe = $('#window_wrapper').height();
+        var tHeight = hframe - hsky;
+        $(el).css({height: tHeight});
+    });
+      
+      
+    $("#title-main").scrollForever({speed: 500, delaytime: 30});
+    $("#title-main-sub").scrollForever({speed: 2000});
+      
+      $("#close-left").click(function() {
+    $("#about-full").css("display", "none");
+  });
+      $("#close-right").click(function() {
+    $("#about-full").css("display", "none");
+  });
+      $("#close-b-right").click(function() {
+    $("#about-full").css("display", "none");
+  });
+ $("#close-b-left").click(function() {
+    $("#about-full").css("display", "none");
+  });
+      $("#about-full .about-txt").click(function() {
+    $("#about-full").css("display", "none");
+  });
+
+$("#w1").mouseover(function(){ 
+     $("#slide1").css("display", "block");}); 
+
+$("#slide1").mouseout(function(){ 
+     $("#slide1").css("display", "none");}); 
+
+$("#w2").mouseover(function(){ 
+     $("#slide2").css("display", "block");}); 
+
+$("#slide2").mouseout(function(){ 
+     $("#slide2").css("display", "none");}); 
+      
+      $("#w3").mouseover(function(){ 
+     $("#slide3").css("display", "block");}); 
+
+$("#slide3").mouseout(function(){ 
+     $("#slide3").css("display", "none");}); 
+      
+      $("#w4").mouseover(function(){ 
+     $("#slide4").css("display", "block");}); 
+
+$("#slide4").mouseout(function(){ 
+     $("#slide4").css("display", "none");}); 
+      
+      $("#w5").mouseover(function(){ 
+     $("#slide5").css("display", "block");}); 
+
+$("#slide5").mouseout(function(){ 
+     $("#slide5").css("display", "none");}); 
+      
+      $("#w6").mouseover(function(){ 
+     $("#slide6").css("display", "block");}); 
+
+$("#slide6").mouseout(function(){ 
+     $("#slide6").css("display", "none");}); 
+      
+      
+      $("#w7").mouseover(function(){ 
+     $("#slide7").css("display", "block");}); 
+
+$("#slide7").mouseout(function(){ 
+     $("#slide7").css("display", "none");}); 
+      
+      
+      $("#w8").mouseover(function(){ 
+     $("#slide8").css("display", "block");}); 
+
+$("#slide8").mouseout(function(){ 
+     $("#slide8").css("display", "none");}); 
+      
+      
+      $("#w9").mouseover(function(){ 
+     $("#slide9").css("display", "block");}); 
+
+$("#slide9").mouseout(function(){ 
+     $("#slide9").css("display", "none");}); 
+      
+      
+      $("#w10").mouseover(function(){ 
+     $("#slide10").css("display", "block");}); 
+
+$("#slide10").mouseout(function(){ 
+     $("#slide10").css("display", "none");}); 
+      
+      $("#w11").mouseover(function(){ 
+     $("#slide11").css("display", "block");}); 
+
+$("#slide11").mouseout(function(){ 
+     $("#slide11").css("display", "none");});
+      
+      $("#w12").mouseover(function(){ 
+     $("#slide12").css("display", "block");}); 
+
+$("#slide12").mouseout(function(){ 
+     $("#slide12").css("display", "none");}); 
+
+      
+      $("#w13").mouseover(function(){ 
+     $("#slide13").css("display", "block");}); 
+
+$("#slide13").mouseout(function(){ 
+     $("#slide13").css("display", "none");}); 
+      
+ $("#GIQ-btn-2").mouseover(function(){ 
+     $("#service").css("display", "block");});
+      
+ $("#GIQ-btn-2").mouseout(function(){     
+     $("#service").css("display", "none");});
+
+      var audio = $("#logoAudio")[0];
+       $("#logo-img").mouseenter(function(){     
+    audio.play();});
+      $(".randoms_window").mouseenter(function(){     
+        audio.play();
+        audio.volume = 0.5;});
+      
+      var audio2 = $("#bgAudio")[0];
+      $("#flounder").hover(function(){     
+        audio2.play();
+        audio2.volume = 0.2;});
+      
+      
+$("#service").mouseover(function(){ 
+    if($("#service").css("display") == "block"){
+$("#service").css("display", "block");
+}else{
+$("#service").css("display", "none");
+}
+     });
+      
+       $("#service").mouseout(function(){     
+     $("#service").css("display", "none");});
+      
+  $("#about").click(function() {
+    $("#about-full").css("display", "block");
+  });
+      
+    $("#draggable").draggable({ containment: "window" });
+    $("#flounder").click(function() {
+    $("#flounder").css("display", "none");
+  });});
+</script>
+  
+
+<script type="text/javascript">
+
+function onloadFunction() {
+  var amount = X; //The amount of loops
+  var arrayIDs = ["GIQ-btn-1", "GIQ-btn-2", "GIQ-btn-3" , "GIQ-btn-4"];    //all the IDs of the images
+
+  for (i=1;i<=amount;i++) {
+
+   //First get the image height and width in a var
+   var element = document.getElementById(arrayIDs[i-1]);
+   var positionInfo = element.getBoundingClientRect();
+   var imgHeight = positionInfo.height;
+   var imgWidth = positionInfo.width;
+
+   //Then get the width and height of the screen. if the container is not the screen
+   //use the same code as above for the image width/height and change the imgID
+   //The the Id of the container element.
+   var screenWidth = window.innerWidth;
+   var screenHeight = 6821;
+
+   //Now generate a random top and left position for the image on page load
+   var imgLeft = Math.floor(Math.random() * (screenWidth - imgWidth)); 
+   var imgTop= Math.floor(Math.random() * (screenHeight - imgHeight)); 
+
+   //The reason to get the img and screen height and width is to not let the 
+   //image
+   //overlap out of the screen 
+
+
+   //Now set the image to correct position
+   document.getElementById(arrayIDs[i-1]).style.top = imgTop+"px";
+   document.getElementById(arrayIDs[i-1]).style.left = imgLeft+"px";
+  }
+}
+    
+</script>

@@ -2,10 +2,10 @@
 layout: default-GIQ
 ---
 
-<div class="wrapper_GIQ" style="overflow:auto;">
+<div class="wrapper_GIQ">
 
 
-<article class="post h-entry" itemscope temtype="http://schema.org/BlogPosting" style="padding: 2.5vw;">
+<article class="post h-entry" itemscope temtype="http://schema.org/BlogPosting">
  <div class="GIQ-3 post-content G-blur e-content" id="flounder" itemprop="articleBody" style="    z-index: 20000 !important;">
       <header class="post-header">
         <img src="/img/GIQ-3/thumbnail-2.svg">
@@ -17,16 +17,15 @@ layout: default-GIQ
 <div ID="containment-wrapper">
     <div ID="GIQ-3-img-wrapper" class="draggable">
 
+        
 {% assign variable = 1 %}
-    
 {% for image in site.static_files %}
     {% if variable < 82 %} 
-    {% if image.path contains 'img/GIQ-3/' %}
-        
-<div class="GIQ-3-img" style="background-image: url('{{ site.baseurl }}{{ image.path }}')"></div>
-    {% assign variable = variable | plus:1 %}    
+        {% if image.path contains 'img/GIQ-3/' %}
+            <div class="GIQ-3-img" style="background-image: url('{{ site.baseurl }}{{ image.path }}')"></div>
+            {% assign variable = variable | plus:1 %}    
+        {% endif %}
     {% endif %}
-{% endif %}
 {% endfor %}
 
     </div>

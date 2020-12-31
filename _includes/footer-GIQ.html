@@ -36,6 +36,34 @@
 <script type="text/javascript">
   $(document).ready(function() { 
       
+      
+    
+      
+    $('#containment-wrapper').each(function(i,el){
+        var wframe = $(window).width();
+        var hframe = $(window).height();
+        var x = 70868
+        var w = x - wframe;
+        var h = x - hframe;
+        var w2 = w *0.5;
+        var h2 = h *0.5;
+        var wf2 = wframe *0.5;
+        var hf2 = hframe *0.5;
+        var tLeft = -w2 + wf2,
+            tTop  = -h2 + hf2;
+        $(el).css({left: tLeft, top: tTop, width: w, height: h});
+    }); 
+    
+   $('#GIQ-3-img-wrapper').each(function(i,el){
+        var wframe = $(window).width()*0.5;
+        var hframe = $(window).height()*0.5;
+        var tLeft = 17717 - wframe,
+            tTop  = 17717 - hframe;
+        $(el).css({left: tLeft, top: tTop});
+    });
+      
+      
+      
     $("#title-main").scrollForever({speed: 500, delaytime: 30});
     $("#title-main-sub").scrollForever({speed: 2000});
       
@@ -61,7 +89,7 @@
   });
       
       
-      $( "#draggable" ).draggable({ containment: "window" });
+      $( "#draggable" ).draggable({ containment: "parent" });
 
       
         $("#flounder").click(function() {
