@@ -1,12 +1,15 @@
 
 .slide {
     max-width: 36vh;
-    min-width: 320px;
+    min-width: 200px;
     height: 64vh;
   display: grid;
-    background-color: #cc9966;
+    background-color: rgba(204, 153, 102, 0.5);
     position: absolute;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 }
 
 .slide-items {
@@ -37,6 +40,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
+column-gap: 10vh
 }
 
 .slide-nav button {
@@ -54,7 +58,7 @@
 
 .slide-items > .active {
   position: relative;
-  opacity: 1;
+  opacity:1;
   pointer-events: initial;
 }
 
@@ -84,6 +88,13 @@
   border-radius: 3px;
   transform: translateX(-100%);
   animation: thumb 5s forwards linear;
+}
+
+.slide-prev{
+    cursor: w-resize;
+}
+.slide-next{
+    cursor: e-resize;
 }
 
 @keyframes thumb {

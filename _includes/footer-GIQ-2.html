@@ -55,7 +55,7 @@
       
     $('.flare').each(function(i,el){
         var wframe = $('#window').width();
-        var hframe = $('#window').height()-500;
+        var hframe = $('#window').height()-600;
         var tLeft = Math.floor(Math.random()*wframe),
             tTop  = Math.floor(Math.random()*hframe);
         $(el).css({left: tLeft, top: tTop});
@@ -71,7 +71,7 @@
       
       $('#sky-2').each(function(i,el){
         var hsky = $('#sky-1').height();
-        var hframe = $('#window_wrapper').height();
+        var hframe = $('#window').height();
         var tHeight = hframe - hsky;
         $(el).css({height: tHeight});
     });
@@ -95,94 +95,61 @@
       $("#about-full .about-txt").click(function() {
     $("#about-full").css("display", "none");
   });
+ 
 
-$("#w1").mouseover(function(){ 
+$("#w1").mousedown(function(){ 
      $("#slide1").css("display", "block");}); 
 
-$("#slide1").mouseout(function(){ 
-     $("#slide1").css("display", "none");}); 
-
-$("#w2").mouseover(function(){ 
+$("#w2").mousedown(function(){ 
      $("#slide2").css("display", "block");}); 
-
-$("#slide2").mouseout(function(){ 
-     $("#slide2").css("display", "none");}); 
       
-      $("#w3").mouseover(function(){ 
+$("#w3").mousedown(function(){ 
      $("#slide3").css("display", "block");}); 
-
-$("#slide3").mouseout(function(){ 
-     $("#slide3").css("display", "none");}); 
       
-      $("#w4").mouseover(function(){ 
+$("#w4").mousedown(function(){ 
      $("#slide4").css("display", "block");}); 
-
-$("#slide4").mouseout(function(){ 
-     $("#slide4").css("display", "none");}); 
       
-      $("#w5").mouseover(function(){ 
+$("#w5").mousedown(function(){ 
      $("#slide5").css("display", "block");}); 
-
-$("#slide5").mouseout(function(){ 
-     $("#slide5").css("display", "none");}); 
       
-      $("#w6").mouseover(function(){ 
+$("#w6").mousedown(function(){ 
      $("#slide6").css("display", "block");}); 
-
-$("#slide6").mouseout(function(){ 
-     $("#slide6").css("display", "none");}); 
       
-      
-      $("#w7").mouseover(function(){ 
+$("#w7").mousedown(function(){ 
      $("#slide7").css("display", "block");}); 
-
-$("#slide7").mouseout(function(){ 
-     $("#slide7").css("display", "none");}); 
       
-      
-      $("#w8").mouseover(function(){ 
+$("#w8").mousedown(function(){ 
      $("#slide8").css("display", "block");}); 
 
-$("#slide8").mouseout(function(){ 
-     $("#slide8").css("display", "none");}); 
-      
-      
-      $("#w9").mouseover(function(){ 
+$("#w9").mousedown(function(){ 
      $("#slide9").css("display", "block");}); 
 
-$("#slide9").mouseout(function(){ 
-     $("#slide9").css("display", "none");}); 
-      
-      
-      $("#w10").mouseover(function(){ 
+$("#w10").mousedown(function(){ 
      $("#slide10").css("display", "block");}); 
-
-$("#slide10").mouseout(function(){ 
-     $("#slide10").css("display", "none");}); 
       
-      $("#w11").mouseover(function(){ 
+$("#w11").mousedown(function(){ 
      $("#slide11").css("display", "block");}); 
 
-$("#slide11").mouseout(function(){ 
-     $("#slide11").css("display", "none");});
-      
-      $("#w12").mouseover(function(){ 
+$("#w12").mousedown(function(){ 
      $("#slide12").css("display", "block");}); 
-
-$("#slide12").mouseout(function(){ 
-     $("#slide12").css("display", "none");}); 
-
       
-      $("#w13").mouseover(function(){ 
+$("#w13").mousedown(function(){ 
      $("#slide13").css("display", "block");}); 
-
-$("#slide13").mouseout(function(){ 
-     $("#slide13").css("display", "none");}); 
       
- $("#GIQ-btn-2").mouseover(function(){ 
+      
+$("#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11, #slide12, #slide13").mouseenter(function(){ 
+    if($(this).css("display") == "block")
+    {
+        $(this).mouseleave(function(){
+            $(this).css("display", "none");});
+    }else{
+    }});
+
+
+$("#GIQ-btn-2").mouseover(function(){ 
      $("#service").css("display", "block");});
       
- $("#GIQ-btn-2").mouseout(function(){     
+$("#GIQ-btn-2").mouseout(function(){     
      $("#service").css("display", "none");});
 
       var audio = $("#logoAudio")[0];

@@ -140,12 +140,12 @@ hr{
 }
 
 .GIQ-3 {
-    width: calc(100vw - 12vw);
-    height: calc(100vh - 12vw);
-    left: 4vw;
-    top: 4vw;
+    width: calc(100vw - 20vw);
+    height: calc(100vh - 20vw);
+    left: 6vw;
+    top: 6vw;
     z-index: 9999 !important;
-    padding: 2vw;
+    padding: 4vw;
     overflow-x:hidden;
     overflow-y:auto;
 }
@@ -253,10 +253,11 @@ hr{
     position: absolute;
     z-index: 399999;
     overflow: hidden;
+    width: 36vh;
     max-width: 36vh;
-    min-width: 300px;
+    min-width: 200px;
     height: 64vh;
-    box-shadow: 0 4px 10px 2px rgba(0, 255, 0, 0.4);
+    box-shadow: 0 4px 10px 2px rgba(0, 255, 0, 0.4)
 }
 
 .flare{
@@ -306,7 +307,6 @@ hr{
 }
 
 #window_wrapper{
-    margin-top: 10vh;
     width: 40vw;
     margin-left: 30vw;
     min-height: 6000px;
