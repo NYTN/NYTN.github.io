@@ -3,6 +3,7 @@
 
 <div class="wrapper">
     
+
 </div>
 
 </footer>
@@ -14,12 +15,16 @@
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
 
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
-    
+<script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+
+
 <script>
   $(document).ready(function(e){
     $("p, li, h1, h2").multilingual(["ko"]);
     $("p").has("img").css({padding: 0});
     $("p").has("img").css({textAlign: "center"});
+    $("#title-main").scrollForever({speed: 500, delaytime: 30});
+
   });
     
 </script>

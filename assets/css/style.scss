@@ -273,6 +273,38 @@ span{
 
 /* main div */
 
+.scroller{
+    width:100vw;
+    height:10vh;
+    overflow: hidden;
+    position: absolute;
+    top: calc(50% - 5vh);
+    left:0;
+
+    float: left;
+    list-style: none;
+    text-align: center;
+    z-index: 999999;    
+}
+
+.scroller li{
+    height: 100vh;
+    width: 100vw;
+    float: left;
+    list-style: none;
+    background-repeat: repeat;
+    background-size: auto 10vh;
+    background-position: center top;
+}
+
+.G-blur{
+    background-color: #00ff00;
+    box-shadow: 0px 0px 0.5rem 0.5rem rgba(0, 255, 0, 1);
+    opacity: 0.99;
+    z-index: 0 !important;
+    border-radius: 0.5rem;
+}
+
 .home{
     width: 100vw;
     height: 100vh;
@@ -556,78 +588,6 @@ video {
 .draggable:active{
     cursor: grabbing;
     z-index: 9999;
-}
-
-
-.GIQ-popup{
-    position: absolute;
-    right:0%;
-    top: calc(50% - 2rem);
-    overflow: hidden;
-    width: 100%;
-    height: 4rem;
-    color: blue;
-    z-index: 9999;
-    display: block;
-    border-color: greenyellow;
-    text-align: center;
-    float: left;
-    white-space: nowrap;
-    filter: drop-shadow(0 0 10px greenyellow);
-    vertical-align: middle;
-    cursor:pointer;
-}
-
-.GIQ-popup-box{
-    position: absolute;
-    right:0%;
-    top: calc(50% - 2rem);
-    overflow: hidden;
-    width: 100%;
-    height: 4rem;
-    background-color: greenyellow;
-    color: blue;
-    z-index: 9999;
-    display: block;
-    border-color: greenyellow;
-    filter: blur(5px);
-    z-index: 9998;
-}
-
-.GIQ-popup-inner{
-    display: inline-flex;
-    width: fit-content;
-    position: relative;
-    padding: .5rem;
-    float: left;
-}
-
-GIQ-popup-inner-2{
-    animation-delay: 5s;
-
-}
-
-.GIQ-popup span{
-    font-family: 'messapiaregular' !important;
-    font-size: 2.5rem;
-    letter-spacing: -3px;
-    white-space: nowrap;
-    float: left;
-    padding-left: 0.5rem;
-    animation: GIQ-popup 10s linear infinite;
-    transform: translate3d(0, 0, 0);
-    display: inline-block;
-
-}
-
-@keyframes GIQ-popup {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
 }
 
 #prev{
