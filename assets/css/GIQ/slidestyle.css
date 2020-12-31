@@ -41,7 +41,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-column-gap: 10vh
+column-gap: 20vh
 }
 
 .slide-nav button {

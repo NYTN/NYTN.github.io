@@ -2,6 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+.is-dragging {
+  z-index: 50000;
+}
+
 
 *
 {
@@ -253,7 +257,7 @@ hr{
 .float{
     display: none;
     position: absolute;
-    z-index: 399999;
+    z-index: 69999 !important;
     overflow: hidden;
     width: 50.625vh;
     max-width: 50.625vh;
