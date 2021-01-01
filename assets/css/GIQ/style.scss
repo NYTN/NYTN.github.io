@@ -860,8 +860,8 @@ div.link-box div + div {
     display: block;
     position: absolute; 
     overflow: hidden;
- 
     animation-iteration-count: infinite; 
+    z-index: 500000;
 }
 
 @keyframes GIQ-1 { 
