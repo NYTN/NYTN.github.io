@@ -1,10 +1,12 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-.is-dragging {
-    z-index: 80000;
-    transform: rotate(360deg);
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -ms-user-select : none
 }
 
 
@@ -241,7 +243,7 @@ hr{
     background-size: 100% auto;
     display: block;
     height: max-content;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -251,7 +253,7 @@ hr{
     display: block;
     position: absolute;
     z-index: 60000;
-    left:30vw;
+    left: 30vw;
     overflow: visible;
     cursor: help;
 }
@@ -1213,12 +1215,12 @@ video {
 
 .draggable{
     cursor: grab;
-    z-index: 60000;
+    z-index: 70000;
 }
 
 .draggable:active{
     cursor: grabbing;
-    z-index: 70000;
+    z-index: 80000;
 }
 
 #prev{
