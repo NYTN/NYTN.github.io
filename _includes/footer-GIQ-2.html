@@ -16,6 +16,8 @@
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/slide-stories.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
 
 <script>
   $(document).ready(function(e){
@@ -48,13 +50,22 @@
         $(el).css({left: tLeft, top: tTop});
     });
       
-    $('.randoms_window').each(function(i,el){
-        var wframe = $('#window').offset().top;
-        var hframe = $('#window').height()-600;
-        var tRandom  = Math.floor(Math.random()*hframe);
-        var tTop  = tRandom + wframe;
-        $(el).css({top: tTop});
+    var tilesize = 300, tilecount = 19;
+    var gCols = Math.floor($('#window').innerHeight()/tilesize);
+
+    var vals = _.shuffle(_.range(tilecount));
+    var ypos = _.shuffle(_.range(gCols));
+    var wtop = $('#window').offset().top;
+    var w = 1;
+      
+    _.each(vals, function(d,i){
+     if( w < 20){
+        $('#w' + w).css({'top':(ypos[i] * tilesize + wtop)+'px'});
+        w++;
+     }
+        
     });
+      
       
     $('.flare').each(function(i,el){
         var wframe = $('#window').width();
@@ -65,11 +76,14 @@
     }); 
       
     $('.float').each(function(i,el){
-        var wframe = Math.floor(Math.random() * 401) - 100;
-        var hframe = Math.floor(Math.random() * 401) - 100;
-        var tLeft = Math.floor(Math.random()*wframe),
-            tTop  = Math.floor(Math.random()*hframe);
-        $(el).css({left: tLeft, top:tTop});
+        var rwwidth = $('.randoms_window').width()*1.5;
+        var fwidth = $('.float').width()/2;
+        var fheight = $('.float').height()*0.4;
+        var wframe = Math.floor(Math.random() * rwwidth);
+        var hframe = Math.floor(Math.random() * 201) - 200;
+        var tLeft = Math.floor(Math.random()*wframe)-fwidth,
+            tTop  = Math.floor(Math.random()*hframe)-fheight;
+        $(el).css({left: tLeft, bottom:tTop});
     }); 
       
       $('#sky-2').each(function(i,el){
