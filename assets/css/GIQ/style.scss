@@ -3,7 +3,8 @@
 ---
 
 .is-dragging {
-  z-index: 50000;
+    z-index: 80000;
+    transform: rotate(360deg);
 }
 
 
@@ -249,9 +250,10 @@ hr{
     height: 100px;
     display: block;
     position: absolute;
-    z-index: 3000;
+    z-index: 60000;
     left:30vw;
     overflow: visible;
+    cursor: help;
 }
 
 .float{
@@ -263,7 +265,15 @@ hr{
     max-width: 50.625vh;
     min-width: 200px;
     height: 90vh;
-    box-shadow: 0 4px 10px 2px rgba(0, 255, 0, 0.4)
+    box-shadow: 0 4px 10px 2px rgba(0, 255, 0, 0.4);
+}
+
+.float:active{
+    z-index: 90000;
+}
+
+.float:hover{
+    z-index: 90000;
 }
 
 .flare{
@@ -376,6 +386,7 @@ hr{
 .randoms{
     position: absolute;
     max-width: 70vw;
+    z-index: 70000;
 }
 
 #service{
@@ -1202,12 +1213,12 @@ video {
 
 .draggable{
     cursor: grab;
-    z-index: 39000;
+    z-index: 60000;
 }
 
 .draggable:active{
     cursor: grabbing;
-    z-index: 40000;
+    z-index: 70000;
 }
 
 #prev{

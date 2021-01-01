@@ -62,12 +62,12 @@
         $(el).css({left: tLeft, top: tTop});
     }); 
       
-       $('.float').each(function(i,el){
-        var wframe = Math.floor(Math.random() * 801) - 100;
-        var hframe = Math.floor(Math.random() * 501) - 100;
+    $('.float').each(function(i,el){
+        var wframe = Math.floor(Math.random() * 401) - 100;
+        var hframe = Math.floor(Math.random() * 401) - 100;
         var tLeft = Math.floor(Math.random()*wframe),
             tTop  = Math.floor(Math.random()*hframe);
-        $(el).css({left: tLeft});
+        $(el).css({left: tLeft, top:tTop});
     }); 
       
       $('#sky-2').each(function(i,el){
@@ -98,46 +98,46 @@
   });
  
 
-$("#w1").mousedown(function(){ 
+$("#w1").mouseenter(function(){ 
      $("#slide1").css("display", "block");}); 
 
-$("#w2").mousedown(function(){ 
+$("#w2").mouseenter(function(){ 
      $("#slide2").css("display", "block");}); 
       
-$("#w3").mousedown(function(){ 
+$("#w3").mouseenter(function(){ 
      $("#slide3").css("display", "block");}); 
       
-$("#w4").mousedown(function(){ 
+$("#w4").mouseenter(function(){ 
      $("#slide4").css("display", "block");}); 
       
-$("#w5").mousedown(function(){ 
+$("#w5").mouseenter(function(){ 
      $("#slide5").css("display", "block");}); 
       
-$("#w6").mousedown(function(){ 
+$("#w6").mouseenter(function(){ 
      $("#slide6").css("display", "block");}); 
       
-$("#w7").mousedown(function(){ 
+$("#w7").mouseenter(function(){ 
      $("#slide7").css("display", "block");}); 
       
-$("#w8").mousedown(function(){ 
+$("#w8").mouseenter(function(){ 
      $("#slide8").css("display", "block");}); 
 
-$("#w9").mousedown(function(){ 
+$("#w9").mouseenter(function(){ 
      $("#slide9").css("display", "block");}); 
 
-$("#w10").mousedown(function(){ 
+$("#w10").mouseenter(function(){ 
      $("#slide10").css("display", "block");}); 
       
-$("#w11").mousedown(function(){ 
+$("#w11").mouseenter(function(){ 
      $("#slide11").css("display", "block");}); 
 
-$("#w12").mousedown(function(){ 
+$("#w12").mouseenter(function(){ 
      $("#slide12").css("display", "block");}); 
       
-$("#w13").mousedown(function(){ 
+$("#w13").mouseenter(function(){ 
      $("#slide13").css("display", "block");}); 
       
-      
+
 $("#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11, #slide12, #slide13").mouseenter(function(){ 
     if($(this).css("display") == "block")
     {
