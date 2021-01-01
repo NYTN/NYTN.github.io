@@ -90,20 +90,16 @@ $("#about-full, #flounder")
 });
 
 
-  $("#about").click(function() {
-    $("#about-full").css("display", "block");
-  });
-      
-      
       $( "#draggable" ).draggable({ containment: "parent" });
 
    
 if($.cookie("visits") !== 'dontshow'){
-    $("#about-full").css("display", "block");
-}else{
+    $("#about-full").css("opacity", "1");}else{
     $("#about-full").css("display", "none");
-}$("#about, #close-left, #close-right, #close-b-right, #close-b-left, #about-full .about-txt").click(function(){
-    $("#about-full").css("display", "none");
+    $("#about-full").css("opacity", "0");
+    $("#about").click(function() {$("#about-full").css("display", "block"); $("#about-full").css("opacity", "1");});}
+    $("#close-left, #close-right, #close-b-right, #close-b-left, #about-full .about-txt").click(function(){
+    $("#about-full").css("opacity", "0");
     $.cookie("visits", "dontshow");
 }); 
 
