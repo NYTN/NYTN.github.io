@@ -1,8 +1,6 @@
 
 .slide {
     width: 50.625vh;
-    max-width: 50.625vh;
-    min-width: 200px;
     height: 90vh;
   display: grid;
     background-color: rgba(204, 153, 102, 0.5);

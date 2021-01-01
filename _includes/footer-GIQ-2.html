@@ -112,20 +112,28 @@ $('.randoms').mouseup(function(){
 });
 });
 
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
 $('.randoms_window').mouseenter(function(){
     $(this).children('.float').css("display", "block");
+    if(!isMobile){ $(this).children('.float').unbind('mouseleave'); }
 });
 
 $(".float").mouseenter(function(){ 
     if($(this).css("display") == "block")
-    {   $(this).closest(".randoms_window").css("z-index", "75000");
+    {   if(!isMobile){
+            $(this).on("doubletap", function(event){
+                $(this).css("display", "none");
+                $(this).closest(".randoms_window").css("z-index", "60000");
+            });
+        
+    }else{
+        $(this).closest(".randoms_window").css("z-index", "75000");
         $(this).mouseleave(function(){
             $(this).css("display", "none");
             $(this).closest(".randoms_window").css("z-index", "60000");
         });
-    }else{ 
-    }});
+    }}}); 
 
 $("#GIQ-btn-2").mouseover(function(){ 
      $("#service").css("display", "block");});
@@ -182,11 +190,9 @@ $("#about-full, #flounder")
 
     
 </script>
-  
+
 
 <script type="text/javascript">
-
-    
 function onloadFunction() {
   var amount = X; //The amount of loops
   var arrayIDs = ["GIQ-btn-1", "GIQ-btn-2", "GIQ-btn-3" , "GIQ-btn-4"];    //all the IDs of the images
@@ -212,8 +218,6 @@ function onloadFunction() {
    //The reason to get the img and screen height and width is to not let the 
    //image
    //overlap out of the screen 
-
-
    //Now set the image to correct position
    document.getElementById(arrayIDs[i-1]).style.top = imgTop+"px";
    document.getElementById(arrayIDs[i-1]).style.left = imgLeft+"px";
