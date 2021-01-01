@@ -78,26 +78,6 @@
         var tHeight = hframe - hsky;
         $(el).css({height: tHeight});
     });
-      
-      
-    $("#title-main").scrollForever({speed: 500, delaytime: 30});
-    $("#title-main-sub").scrollForever({speed: 2000});
-      
-      $("#close-left").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#close-right").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#close-b-right").click(function() {
-    $("#about-full").css("display", "none");
-  });
- $("#close-b-left").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#about-full .about-txt").click(function() {
-    $("#about-full").css("display", "none");
-  });
 
 $('.randoms').mousedown(function(){
     $('.randoms_window').unbind('mouseenter');
@@ -108,10 +88,12 @@ $('.randoms').mouseup(function(){
     $(this).children('.float').css("display", "block");});
     $(".float").mouseenter(function(){ 
     if($(this).css("display") == "block")
-    {
+    {$(this).closest(".randoms_window").css("z-index", "75000");
         $(this).mouseleave(function(){
-            $(this).css("display", "none");});
-    }else{
+            $(this).css("display", "none");
+            $(this).closest(".randoms_window").css("z-index", "60000");
+        });
+    }else{ 
     }});
 });
 });
@@ -123,12 +105,13 @@ $('.randoms_window').mouseenter(function(){
 
 $(".float").mouseenter(function(){ 
     if($(this).css("display") == "block")
-    {
+    {   $(this).closest(".randoms_window").css("z-index", "75000");
         $(this).mouseleave(function(){
-            $(this).css("display", "none");});
-    }else{
+            $(this).css("display", "none");
+            $(this).closest(".randoms_window").css("z-index", "60000");
+        });
+    }else{ 
     }});
-
 
 $("#GIQ-btn-2").mouseover(function(){ 
      $("#service").css("display", "block");});
@@ -141,7 +124,7 @@ $("#service").css("display", "block");
 }
      });
       
-       $("#service").mouseout(function(){     
+$("#service").mouseout(function(){     
      $("#service").css("display", "none");});
 
 
@@ -159,16 +142,9 @@ $("#service").css("display", "block");
         audio2.volume = 0.2;});
       
       
-  $("#about").click(function() {
-    $("#about-full").css("display", "block");
-  });
-      
-    $("#draggable").draggable({ containment: "window" });
+$("#draggable").draggable({ containment: "window" });
 
-$(".float").hover(function(){
-        $(this).closest(".randoms_window").css("z-index", "75000");});
-$(".float").mouseleave(function(){
-        $(this).closest(".randoms_window").css("z-index", "60000");});
+
       
 var isDragging = false;
 $("#about-full, #flounder")
