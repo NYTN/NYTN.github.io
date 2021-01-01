@@ -15,6 +15,8 @@
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/jquery.cookie.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
 <script>
@@ -71,7 +73,7 @@
       
      
       
-      var isDragging = false;
+var isDragging = false;
 $("#about-full, #flounder")
 .mousedown(function() {
     isDragging = false;
@@ -87,24 +89,7 @@ $("#about-full, #flounder")
     }
 });
 
-      
-      $("#close-left").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#close-right").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#close-b-right").click(function() {
-    $("#about-full").css("display", "none");
-  });
- $("#close-b-left").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      $("#about-full .about-txt").click(function() {
-    $("#about-full").css("display", "none");
-  });
-      
- 
+
   $("#about").click(function() {
     $("#about-full").css("display", "block");
   });
@@ -112,7 +97,19 @@ $("#about-full, #flounder")
       
       $( "#draggable" ).draggable({ containment: "parent" });
 
-  
-  
+   
+if($.cookie("visits") !== 'dontshow'){
+    $("#about-full").css("display", "block");
+}else{
+    $("#about-full").css("display", "none");
+}$("#about, #close-left, #close-right, #close-b-right, #close-b-left, #about-full .about-txt").click(function(){
+    $("#about-full").css("display", "none");
+    $.cookie("visits", "dontshow");
+}); 
+
+      
+      
   });
+    
 </script>
+
