@@ -1,10 +1,41 @@
 ---
 layout: post
 menu-title: Events
-title: "자료집 “여성의 자기표현에 대한 예비적 고찰” 발간"
+title: "Girls in Quarantine"
 permalink: /Events/
 categories: [menu]
 ---
+{: .caption}
+with<br> 권세정, 박보마, 박지원, 백수현, 안초롱, 양윤화, 이주연, 장서영, 최보련, 한지형<br>
+2020.12.31-2021.1.10<br>
+[notyourtypicalnarcissist.com/GIQ](http://notyourtypicalnarcissist.com/GIQ){:target="_blank"}<br><br>
+
+
+![4](/img/giq-thumb.gif)
+
+
+Girls in Quarantine은 사회적 거리두기와 자가격리가 재배치한 일상 속 경험에 주목하고, 여성 창작자와 함께 새로이 부상한 제한조건을 운용하는 실천을 모색하고자 한다.
+
+
+‘스크리닝’은 관계를 매개하는 장치를 탐구하기 위해 권세정, 백수현, 박지원, 장서영, 최보련의 작품을 제안한다. 특정한 입장에 서게 하거나 관계의 모순을 폭로하는 카메라, 타인 혹은 자신을 확인하는 창이자 이미지를 가두어 고립하는 스크린 등 팬데믹 이전에 제작된 작품은 일련의 매개체가 관계의 양식을 재구성하는 방식에 주목한다.
+
+
+‘프로젝트’는 권세정, 박보마, 안초롱, 양윤화, 이주연, 한지형에게 키워드 – ‘Isolation(격리)’과 ‘Intimacy(친밀함)’ – 를 제시하고, 이를 이어받을 단어와 함께 웹페이지를 통해 공개할 신작을 의뢰한 결과물이다. 여섯 명의 작가는 재구성된 리얼리티를 탐구하며, 기존의 연결이 약화되면서 겪는 고립의 양태들을 살펴보는 한편 확장된 친밀감을 탐색한다.
+
+
+{: .caption}
+기획 유지원<br>
+디자인 신인아<br>
+후원 문화체육관광부, 한국문화예술위원회, 서울문화재단<br>
+
+{: .caption}
+<br><br>\* <br>현재 링크([notyourtypicalnarcissist.com/GIQ](http://notyourtypicalnarcissist.com/GIQ){:target="_blank"})는 아카이브용 페이지로, 출품작이 스틸컷으로 교체되거나 기능에 제한이 있을 수 있습니다. 
+
+<hr>
+<br>
+
+<h1 class="post-title p-name" itemprop="name headline">자료집 “여성의 자기표현에 대한 예비적 고찰” 발간</h1>
+
 2018 한국예술창작아카데미의 후원으로 진행한 프로젝트 (Not) Your Typical Narcissist의 자료집이 발간되었습니다. 프로젝트의 문제의식을 발전시키는 데에 중요한 역할을 한 개념 ‘나르시시즘’이 여러 분야의 담론 및 맥락에서 어떻게 사용되었는지를 살펴보는 “여성의 자기표현에 대한 예비적 고찰”입니다.
 
 ![4](/img/event4.jpg)

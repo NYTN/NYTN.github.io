@@ -116,3 +116,127 @@ if($.cookie("visits") !== 'dontshow'){
     
 </script>
 
+<script type="text/javascript">
+
+    function getRandomImage() {
+    // All of the image options
+    // This is very similar to string of characters you have now
+    var images = [
+        '/img/GIQ-3/archive/01_iphone.webp', 
+        '/img/GIQ-3/archive/02_iphone.webp', 
+        '/img/GIQ-3/archive/04_macbook_16in.webp',
+        '/img/GIQ-3/archive/05_macbook_16in.webp', 
+        '/img/GIQ-3/archive/06_iphone.webp', 
+        '/img/GIQ-3/archive/07_ipad.webp',
+        '/img/GIQ-3/archive/08_ipad.webp', 
+        '/img/GIQ-3/archive/09_ipad.webp', 
+        '/img/GIQ-3/archive/10_ipad.webp',
+        '/img/GIQ-3/archive/11_macbook_16in.webp', 
+        '/img/GIQ-3/archive/12_ipad.webp', 
+        '/img/GIQ-3/archive/13_ipad.webp',
+        '/img/GIQ-3/archive/14_iphone.webp', 
+        '/img/GIQ-3/archive/15_iphone.webp', 
+        '/img/GIQ-3/archive/16_macbook_16in.webp',
+        '/img/GIQ-3/archive/17_macbook_16in.webp', 
+        '/img/GIQ-3/archive/18_ipad.webp', 
+        '/img/GIQ-3/archive/19_iphone.webp',
+        '/img/GIQ-3/archive/20_iphone.webp', 
+        '/img/GIQ-3/archive/21_macbook_16in.webp', 
+        '/img/GIQ-3/archive/22_ipad.webp',
+        '/img/GIQ-3/archive/23_iphone.webp', 
+        '/img/GIQ-3/archive/24_ipad.webp', 
+        '/img/GIQ-3/archive/25_macbook_16in.webp',
+        '/img/GIQ-3/archive/26_ipad.webp', 
+        '/img/GIQ-3/archive/27_macbook_16in.webp', 
+        '/img/GIQ-3/archive/28_iphone.webp',
+        '/img/GIQ-3/archive/29_macbook_16in.webp', 
+        '/img/GIQ-3/archive/30_ipad.webp', 
+        '/img/GIQ-3/archive/31_iphone.webp',
+        '/img/GIQ-3/archive/32_macbook_16in.webp', 
+        '/img/GIQ-3/archive/33_iphone.webp', 
+        '/img/GIQ-3/archive/34_macbook_16in.webp',
+        '/img/GIQ-3/archive/35_iphone.webp', 
+        '/img/GIQ-3/archive/36_ipad.webp', 
+        '/img/GIQ-3/archive/37_ipad.webp',
+        '/img/GIQ-3/archive/38_ipad.webp', 
+        '/img/GIQ-3/archive/39_iphone.webp', 
+        '/img/GIQ-3/archive/40_macbook_16in.webp',
+        '/img/GIQ-3/archive/41_iphone.webp', 
+        '/img/GIQ-3/archive/42_iphone.webp', 
+        '/img/GIQ-3/archive/43_macbook_16in.webp',
+        '/img/GIQ-3/archive/44_ipad.webp', 
+        '/img/GIQ-3/archive/45_iphone.webp', 
+        '/img/GIQ-3/archive/46_ipad.webp',
+        '/img/GIQ-3/archive/47_ipad.webp', 
+        '/img/GIQ-3/archive/48_macbook_16in.webp', 
+        '/img/GIQ-3/archive/49_iphone.webp',
+        '/img/GIQ-3/archive/50_iphone.webp', 
+        '/img/GIQ-3/archive/51_macbook_16in.webp', 
+        '/img/GIQ-3/archive/53_macbook_16in.webp',
+        '/img/GIQ-3/archive/54_iphone.webp', 
+        '/img/GIQ-3/archive/55_iphone.webp', 
+        '/img/GIQ-3/archive/56_iphone.webp',
+        '/img/GIQ-3/archive/57_macbook_16in.webp', 
+        '/img/GIQ-3/archive/58_ipad.webp', 
+        '/img/GIQ-3/archive/59_iphone.webp',
+        '/img/GIQ-3/archive/60_macbook_16in.webp', 
+        '/img/GIQ-3/archive/61_macbook_16in.webp', 
+        '/img/GIQ-3/archive/62_iphone.webp',
+        '/img/GIQ-3/archive/63_iphone.webp', 
+        '/img/GIQ-3/archive/64_macbook_16in.webp', 
+        '/img/GIQ-3/archive/65_macbook_16in.webp',
+        '/img/GIQ-3/archive/66_iphone.webp', 
+        '/img/GIQ-3/archive/67_iphone.webp', 
+        '/img/GIQ-3/archive/68_ipad.webp',
+        '/img/GIQ-3/archive/69_macbook_16in.webp', 
+        '/img/GIQ-3/archive/70_ipad.webp', 
+        '/img/GIQ-3/archive/71_iphone.webp',
+        '/img/GIQ-3/archive/72_macbook_16in.webp', 
+        '/img/GIQ-3/archive/73_macbook_16in.webp', 
+        '/img/GIQ-3/archive/74_ipad.webp',
+        '/img/GIQ-3/archive/75_macbook_16in.webp', 
+        '/img/GIQ-3/archive/76_iphone.webp', 
+        '/img/GIQ-3/archive/78_macbook_16in.webp',
+        '/img/GIQ-3/archive/79_macbook_16in.webp', 
+        '/img/GIQ-3/archive/80_iphone.webp', 
+        '/img/GIQ-3/archive/81_iphone.webp',
+        '/img/GIQ-3/archive/82_ipad.webp', 
+        '/img/GIQ-3/archive/83_iphone.webp', 
+        '/img/GIQ-3/archive/84_macbook_16in.webp',
+        '/img/GIQ-3/archive/85_macbook_16in.webp', 
+        '/img/GIQ-3/archive/86_macbook_16in.webp', 
+        '/img/GIQ-3/archive/87_ipad.webp',
+        '/img/GIQ-3/archive/88_ipad.webp', 
+        '/img/GIQ-3/archive/90_ipad.webp', 
+        '/img/GIQ-3/archive/91_iphone.webp',
+        '/img/GIQ-3/archive/92_macbook_16in.webp', 
+        '/img/GIQ-3/archive/93_iphone.webp', 
+        '/img/GIQ-3/archive/94_ipad.webp',
+        '/img/GIQ-3/archive/95_iphone.webp', 
+        '/img/GIQ-3/archive/96_ipad.webp', 
+        '/img/GIQ-3/archive/97_macbook_16in.webp',
+        '/img/GIQ-3/archive/99_ipad.webp', 
+        '/img/GIQ-3/archive/100_iphone.webp', 
+        '/img/GIQ-3/archive/101_iphone.webp',
+        '/img/GIQ-3/archive/102_macbook_16in.webp', 
+        '/img/GIQ-3/archive/103_ipad.webp', 
+        '/img/GIQ-3/archive/104_macbook_16in.webp',
+        '/img/GIQ-3/archive/105_macbook_16in.webp', 
+        '/img/GIQ-3/archive/106_ipad.webp', 
+    ]
+
+    // Randomly select one image path
+    // By using images.length we don't have to hardcode the length like the "16" you're using, which is good incase the list changes
+    var imagePath =  images[Math.floor(Math.random() * images.length)];
+
+    // Return random image path
+    return imagePath;
+}
+    var image = document.getElementById("GIQ3-archive");
+    image.src = getRandomImage();
+    
+    $("#GIQ3-archive").click(function(){
+        image.src = getRandomImage();
+    })
+    
+</script>

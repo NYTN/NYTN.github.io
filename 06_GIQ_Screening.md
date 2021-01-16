@@ -20,13 +20,14 @@ categories: [menu]
 <p></p>
 -	-	-	-	-	-	-	-	-	-	-
 
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/489541589?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+![1](/img/GIQ-screening/01.webp)
 
 {:.caption .G-blur}
 권세정, ⟨우먼 인 더 미러⟩, 2017, 4분 13초, 단채널 비디오 \(촬영: 우숙, 목소리: 톱니귀, 토끼발, 편집: 세정\)
 
+<br>
 
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/489895509?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+![2](/img/GIQ-screening/02.webp)
 
 {:.caption .G-blur}
 권세정, ⟨리액션⟩, 2019, 5분 11초, 단채널 비디오, 반사유리 \(촬영: 우숙, 편집: 세정\)
@@ -57,7 +58,7 @@ categories: [menu]
 
 <p></p>
 -	-	-	-	-	-	-	-	-	-	-
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/495485967?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+![3](/img/GIQ-screening/03.webp)
 
 
 {:.caption .G-blur}
@@ -119,7 +120,7 @@ categories: [menu]
 
 -	-	-	-	-	-	-	-	-	-	-
 
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/489413216?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+![5](/img/GIQ-screening/05.webp)
 
 {:.caption .G-blur}
 박지원, ⟨Something in line+background⟩, 2017, 4분 50초, single-channel video.
@@ -148,12 +149,15 @@ categories: [menu]
 
 -	-	-	-	-	-	-	-	-	-	-	-
 
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/487319996?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+![6](/img/GIQ-screening/06.webp)
+
 
 {:.caption .G-blur}
 최보련, ⟨인간 생활 동반자1\(Human Life Companion1\)⟩, 2016, 9분 52초, 가변 비율 
 
-<div class="vimeo"><iframe title="vimeo-player" src="https://player.vimeo.com/video/487324063?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></div>
+<br>
+
+![7](/img/GIQ-screening/07.webp)
 
 {:.caption .G-blur}
 최보련, ⟨인간 생활 동반자2 \(Human Life Companion2\)⟩, 2018, 12분 52초, 가변 비율

@@ -218,3 +218,22 @@ function onloadFunction() {
 }
     
 </script>
+
+<script type="text/javascript">
+
+    function getRandomImage() {
+    // All of the image options
+    // This is very similar to string of characters you have now
+    var images = ['/img/GIQ-3/archive/01_iphone.webp', '/img/GIQ-3/archive/02_iphone.webp', '/img/GIQ-3/archive/04_macbook_16in.webp']
+
+    // Randomly select one image path
+    // By using images.length we don't have to hardcode the length like the "16" you're using, which is good incase the list changes
+    var imagePath =  images[Math.floor(Math.random() * images.length)];
+
+    // Return random image path
+    return imagePath;
+}
+    var image = document.getElementById("GIQ3-archive");
+    image.src = getRandomImage();
+    
+</script>
