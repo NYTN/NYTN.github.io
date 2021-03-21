@@ -8,14 +8,12 @@
 
 </footer>
 
- <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.multilingual.js"></script>
-
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/scrollForever.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/lightbox.js"></script>
 
 
 <script>
@@ -95,8 +93,15 @@
         $(".draggable").draggable({ containment: "parent" });
     });
     });  
+      
     
 });
+</script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200
+    })
 </script>
 
 <script>
@@ -115,4 +120,7 @@ $("button").click(function(e){
         $("#menu").attr("trigger", "0");
         }
 }); 
+    
+    
+
 </script>
